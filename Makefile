@@ -6,9 +6,9 @@ install_deps:
 	@venv/bin/pip install -r requirements.dev.txt
 
 flake8:
-	@venv/bin/flake8 pogosnap
+	@venv/bin/flake8 pogosnap frontend
 
 pylint:
-	@venv/bin/pylint --load-plugins pylint_django pogosnap/frontend pogosnap/pogosnap
+	@venv/bin/pylint --load-plugins pylint_django frontend pogosnap
 
 lint: flake8 pylint

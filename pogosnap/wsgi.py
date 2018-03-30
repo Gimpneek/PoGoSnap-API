@@ -14,5 +14,6 @@ from whitenoise.django import DjangoWhiteNoise
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pogosnap.settings")
 
-APPLICATION = get_wsgi_application()
-APPLICATION = DjangoWhiteNoise(APPLICATION)
+# pylint: disable=invalid-name
+application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
