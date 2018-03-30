@@ -1,0 +1,6 @@
+astroid==1.6.2
+flake8==3.5.0
+pylint==1.8.3
+pylint-django==0.9.4
+coverage==4.5.1
+sphinx==1.7.2

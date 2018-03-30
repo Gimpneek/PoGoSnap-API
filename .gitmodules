@@ -1,0 +1,3 @@
+[submodule "pogosnap/frontend/web_static"]
+	path = pogosnap/frontend/web_static
+	url = https://github.com/Gimpneek/PoGoSnap-Web
