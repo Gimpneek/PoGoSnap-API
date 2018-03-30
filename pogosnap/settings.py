@@ -25,7 +25,7 @@ SECRET_KEY = 'f8)-()jq3mmch8o6x_x4rd@tm8$c^&0$_=uy6cbg)p8h(1&v++'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'pogosnap.herokuapp.com']
 
 
 # Application definition
