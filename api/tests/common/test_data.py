@@ -2,6 +2,8 @@
 from django.contrib.auth.models import User
 from api.models.profile import Profile
 from api.models.pokemon import Pokemon
+from api.models.image import Image
+from api.models.pokedex_entry import PokedexEntry
 
 
 POKEMON_NAME = 'Mew'
@@ -22,7 +24,8 @@ def create_user():
 
     :return: User object
     """
-    return User.objects.create(username=USER_NAME)
+    User.objects.get_or_create(username=USER_NAME)
+    return User.objects.get(username=USER_NAME)
 
 
 def create_profile():
@@ -31,12 +34,13 @@ def create_profile():
 
     :return: Profile object
     """
-    return Profile.objects.create(
+    Profile.objects.get_or_create(
         user=create_user(),
         name=PROFILE_NAME,
         location=PROFILE_LOCATION,
         silph_card=PROFILE_SILPH_CARD_URL
     )
+    return Profile.objects.get(name=PROFILE_NAME)
 
 
 def create_pokemon():
@@ -48,4 +52,29 @@ def create_pokemon():
     return Pokemon.objects.create(
         name=POKEMON_NAME,
         dex_number=POKEMON_NUMBER
+    )
+
+
+def create_image():
+    """
+    Create an image
+
+    :return: Image object
+    """
+    return Image.objects.create(
+        url=IMAGE_URL,
+        pokemon=create_pokemon(),
+        profile=create_profile()
+    )
+
+
+def create_pokedex_entry():
+    """
+    Create a pokedex entry
+
+    :return: PokedexEntry object
+    """
+    return PokedexEntry.objects.create(
+        image=create_image(),
+        pokemon=create_pokemon()
     )
