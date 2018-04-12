@@ -5,3 +5,4 @@ install:
   - make install_deps
 script:
   - make lint
+  - make unit_test

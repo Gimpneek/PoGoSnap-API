@@ -12,3 +12,6 @@ pylint:
 	@venv/bin/pylint --load-plugins pylint_django frontend pogosnap
 
 lint: flake8 pylint
+
+unit_test:
+	@venv/bin/python manage.py test
