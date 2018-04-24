@@ -55,16 +55,22 @@ def create_pokemon():
     )
 
 
-def create_image():
+def create_image(profile=None, pokemon=None):
     """
     Create an image
 
+    :param profile: Profile object
+    :param pokemon: Pokemon object
     :return: Image object
     """
+    if not profile:
+        profile = create_profile()
+    if not pokemon:
+        pokemon = create_pokemon()
     return Image.objects.create(
         url=IMAGE_URL,
-        pokemon=create_pokemon(),
-        profile=create_profile()
+        pokemon=pokemon,
+        profile=profile
     )
 
 

@@ -1,3 +1,4 @@
+""" Admin setup """
 from django.contrib import admin
 from api.models.profile import Profile
 from api.models.pokemon import Pokemon
