@@ -37,7 +37,7 @@ class TestImageCollectionData(ImageSerializerCase):
         Test the profile id of the collection
         """
         self.assertEqual(self.result.get('profile').get('id'), self.profile.id)
-        
+
     def test_collection_profile_name(self):
         """
         Test the profile name of the collection
