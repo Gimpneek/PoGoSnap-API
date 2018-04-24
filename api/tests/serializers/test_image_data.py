@@ -31,7 +31,7 @@ class TestImageCollectionData(ImageSerializerCase):
         Test the url property of the collection
         """
         self.assertEqual(self.result.get('url'), self.image.url)
-        
+
     def test_collection_profile_id(self):
         """
         Test the profile id of the collection
@@ -45,7 +45,7 @@ class TestImageCollectionData(ImageSerializerCase):
         self.assertEqual(
             self.result.get('profile').get('name'), self.profile.name)
         
-    def test_collection_profile_location(self):
+    def test_collection_profile_loc(self):
         """
         Test the profile location of the collection
         """
@@ -57,7 +57,7 @@ class TestImageCollectionData(ImageSerializerCase):
         Test the profile silph_card of the collection
         """
         self.assertEqual(
-            self.result.get('profile').get('silph_card'), 
+            self.result.get('profile').get('silph_card'),
             self.profile.silph_card
         )
 
