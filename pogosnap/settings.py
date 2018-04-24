@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
-    'frontend.apps.FrontendConfig'
+    'frontend.apps.FrontendConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,17 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'frontend/web_static/dist'
 STATICFILES_STORAGE = \
         'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        # 'rest_framework.permissions.IsAuthenticated',
+    ],
+    'PAGE_SIZE': 10,
+    'DEFAULT_PAGINATION_CLASS':
+        'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.NamespaceVersioning'
+}
