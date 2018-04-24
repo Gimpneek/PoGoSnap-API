@@ -44,14 +44,14 @@ class TestImageCollectionData(ImageSerializerCase):
         """
         self.assertEqual(
             self.result.get('profile').get('name'), self.profile.name)
-        
+
     def test_collection_profile_loc(self):
         """
         Test the profile location of the collection
         """
         self.assertEqual(
             self.result.get('profile').get('location'), self.profile.location)
-        
+
     def test_collection_profile_card(self):
         """
         Test the profile silph_card of the collection
@@ -69,7 +69,7 @@ class TestImageCollectionData(ImageSerializerCase):
             self.result.get('pokemon').get('id'),
             self.pokemon.id
         )
-        
+
     def test_collection_pokemon_name(self):
         """
         Test the pokemon name of the collection
@@ -78,7 +78,7 @@ class TestImageCollectionData(ImageSerializerCase):
             self.result.get('pokemon').get('name'),
             self.pokemon.name
         )
-        
+
     def test_collection_pokemon_dex(self):
         """
         Test the pokemon dex_number of the collection
