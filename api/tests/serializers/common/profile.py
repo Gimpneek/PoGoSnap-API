@@ -10,4 +10,4 @@ class ProfileSerializerCase(TestCase):
     def setUp(self):
         """ Set up the tests """
         super(ProfileSerializerCase, self).setUp()
-        self.url = '/api/v1/profile/'
+        self.url = '/api/v1/profiles/'
