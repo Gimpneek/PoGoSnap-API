@@ -1,3 +1,4 @@
+""" Common set up for testing Profile API """
 from django.test import TestCase
 
 

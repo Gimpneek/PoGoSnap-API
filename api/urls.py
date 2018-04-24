@@ -3,11 +3,11 @@ from django.conf.urls import url, include
 from rest_framework import routers
 from api.view_sets.profile import ProfileViewSet
 
-api_router = routers.SimpleRouter()
-api_router.register(r'users', ProfileViewSet)
+API_ROUTER = routers.SimpleRouter()
+API_ROUTER.register(r'users', ProfileViewSet)
 
 urlpatterns = [
-    url(r'v1', include(api_router.urls))
+    url(r'v1', include(API_ROUTER.urls))
 ]
 
 api_urls = urlpatterns, 'api', 'api'
