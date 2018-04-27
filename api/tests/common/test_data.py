@@ -24,7 +24,9 @@ def create_user():
 
     :return: User object
     """
-    User.objects.get_or_create(username=USER_NAME)
+    user = User.objects.get_or_create(username=USER_NAME)[0]
+    user.set_password(USER_NAME)
+    user.save()
     return User.objects.get(username=USER_NAME)
 
 

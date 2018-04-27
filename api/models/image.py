@@ -9,5 +9,5 @@ class Image(models.Model):
     """ Image model """
 
     url = models.URLField()
-    pokemon = models.OneToOneField(Pokemon, on_delete=models.DO_NOTHING)
-    profile = models.OneToOneField(Profile, on_delete=models.DO_NOTHING)
+    pokemon = models.ForeignKey(Pokemon, on_delete=models.DO_NOTHING)
+    profile = models.ForeignKey(Profile, on_delete=models.DO_NOTHING)
