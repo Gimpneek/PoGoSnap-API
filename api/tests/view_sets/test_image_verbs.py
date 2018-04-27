@@ -56,6 +56,20 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
             format='json')
         self.assertEqual(resp.status_code, 201)
 
+    def test_post_error(self):
+        """
+        Test that when sending POST data that's bad it returns the correct
+        error code
+        """
+        resp = self.api.post(
+            self.url,
+            {
+                'pokemon': 'a'
+            },
+            format='json'
+        )
+        self.assertEqual(resp.status_code, 400)
+
     def test_delete_blocked(self):
         """
         Test that delete requests are not allowed
