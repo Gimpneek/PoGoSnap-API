@@ -9,5 +9,5 @@ class PokedexEntry(models.Model):
     """
     Model for Pokedex entries
     """
-    pokemon = models.OneToOneField(Pokemon, on_delete=models.DO_NOTHING)
-    image = models.OneToOneField(Image, on_delete=models.DO_NOTHING)
+    pokemon = models.ForeignKey(Pokemon, on_delete=models.DO_NOTHING)
+    image = models.ForeignKey(Image, on_delete=models.DO_NOTHING)

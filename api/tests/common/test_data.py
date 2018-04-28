@@ -4,6 +4,7 @@ from api.models.profile import Profile
 from api.models.pokemon import Pokemon
 from api.models.image import Image
 from api.models.pokedex_entry import PokedexEntry
+from api.models.pokedex import Pokedex
 
 
 POKEMON_NAME = 'Mew'
@@ -76,13 +77,40 @@ def create_image(profile=None, pokemon=None):
     )
 
 
-def create_pokedex_entry():
+def create_pokedex_entry(image=None, pokemon=None):
     """
     Create a pokedex entry
 
+    :param image: Image object
+    :param pokemon: Pokemon object
     :return: PokedexEntry object
     """
+    if not image:
+        image = create_image()
+    if not pokemon:
+        pokemon = create_pokemon()
     return PokedexEntry.objects.create(
-        image=create_image(),
-        pokemon=create_pokemon()
+        image=image,
+        pokemon=pokemon
     )
+
+
+def create_pokedex(profile=None, entries=None):
+    """
+    Create a pokedex object
+
+    :param profile: Profile object
+    :param entries: A list of PokedexEntry objects
+    :return: Pokedex object
+    """
+    if not profile:
+        profile = create_profile()
+    if not entries:
+        entries = [create_pokedex_entry()]
+    pokedex = Pokedex.objects.create(
+        profile=profile,
+    )
+    for entry in entries:
+        pokedex.entries.add(entry)
+    pokedex.save()
+    return pokedex

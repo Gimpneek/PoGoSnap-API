@@ -17,11 +17,43 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Profile',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(help_text='Name of the user', max_length=128)),
-                ('location', models.CharField(help_text='Location of the user', max_length=128)),
-                ('silph_card', models.CharField(help_text="URL of User's Silph Card", max_length=128)),
-                ('user', models.OneToOneField(on_delete=django.db.models.deletion.DO_NOTHING, to=settings.AUTH_USER_MODEL)),
+                (
+                    'id',
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                ),
+                (
+                    'name',
+                    models.CharField(
+                        help_text='Name of the user',
+                        max_length=128
+                    )
+                ),
+                (
+                    'location',
+                    models.CharField(
+                        help_text='Location of the user',
+                        max_length=128
+                    )
+                ),
+                (
+                    'silph_card',
+                    models.CharField(
+                        help_text="URL of User's Silph Card",
+                        max_length=128
+                    )
+                ),
+                (
+                    'user',
+                    models.OneToOneField(
+                        on_delete=django.db.models.deletion.DO_NOTHING,
+                        to=settings.AUTH_USER_MODEL
+                    )
+                ),
             ],
         ),
     ]

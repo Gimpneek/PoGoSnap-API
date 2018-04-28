@@ -1,7 +1,7 @@
 # pylint: disable=no-self-use
 """ Serializer for Pokemon model """
-from api.models.pokemon import Pokemon
 from rest_framework import serializers
+from api.models.pokemon import Pokemon
 
 
 class PokemonSerializer(serializers.ModelSerializer):

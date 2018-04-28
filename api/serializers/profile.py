@@ -1,7 +1,7 @@
 # pylint: disable=no-self-use
 """ Serializer for Profile model """
-from api.models.profile import Profile
 from rest_framework import serializers
+from api.models.profile import Profile
 
 
 class ProfileSerializer(serializers.HyperlinkedModelSerializer):

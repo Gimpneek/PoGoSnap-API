@@ -2,3 +2,4 @@ Django==2.0.4
 gunicorn==19.7.1
 whitenoise==3.3.1
 djangorestframework==3.8.2
+drf-nested-routers==0.90.2

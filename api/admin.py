@@ -7,8 +7,8 @@ from api.models.pokedex_entry import PokedexEntry
 from api.models.pokedex import Pokedex
 
 # Register your models here.
-admin.register(Profile)
-admin.register(Pokemon)
-admin.register(Image)
-admin.register(PokedexEntry)
-admin.register(Pokedex)
+admin.site.register(Profile)
+admin.site.register(Pokemon)
+admin.site.register(Image)
+admin.site.register(PokedexEntry)
+admin.site.register(Pokedex)
