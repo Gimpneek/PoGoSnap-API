@@ -13,9 +13,28 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Pokemon',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(help_text='Name of the Pokemon', max_length=128)),
-                ('dex_number', models.SmallIntegerField(help_text='Number of the Pokemon in the Pokedex')),
+                (
+                    'id',
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                ),
+                (
+                    'name',
+                    models.CharField(
+                        help_text='Name of the Pokemon',
+                        max_length=128
+                    )
+                ),
+                (
+                    'dex_number',
+                    models.SmallIntegerField(
+                        help_text='Number of the Pokemon in the Pokedex'
+                    )
+                ),
             ],
         ),
     ]

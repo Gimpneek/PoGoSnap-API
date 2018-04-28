@@ -14,9 +14,29 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='PokedexEntry',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('image', models.OneToOneField(on_delete=django.db.models.deletion.DO_NOTHING, to='api.Image')),
-                ('pokemon', models.OneToOneField(on_delete=django.db.models.deletion.DO_NOTHING, to='api.Pokemon')),
+                (
+                    'id',
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                ),
+                (
+                    'image',
+                    models.OneToOneField(
+                        on_delete=django.db.models.deletion.DO_NOTHING,
+                        to='api.Image'
+                    )
+                ),
+                (
+                    'pokemon',
+                    models.OneToOneField(
+                        on_delete=django.db.models.deletion.DO_NOTHING,
+                        to='api.Pokemon'
+                    )
+                ),
             ],
         ),
     ]

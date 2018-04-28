@@ -14,10 +14,30 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Image',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                ),
                 ('url', models.URLField()),
-                ('pokemon', models.OneToOneField(on_delete=django.db.models.deletion.DO_NOTHING, to='api.Pokemon')),
-                ('profile', models.OneToOneField(on_delete=django.db.models.deletion.DO_NOTHING, to='api.Profile')),
+                (
+                    'pokemon',
+                    models.OneToOneField(
+                        on_delete=django.db.models.deletion.DO_NOTHING,
+                        to='api.Pokemon'
+                    )
+                ),
+                (
+                    'profile',
+                    models.OneToOneField(
+                        on_delete=django.db.models.deletion.DO_NOTHING,
+                        to='api.Profile'
+                    )
+                ),
             ],
         ),
     ]
