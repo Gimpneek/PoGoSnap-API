@@ -11,10 +11,15 @@ POKEMON_NAME = 'Mew'
 POKEMON_NUMBER = 150
 
 USER_NAME = 'test'
+ANOTHER_USER = 'test2'
 
 PROFILE_NAME = 'test'
 PROFILE_LOCATION = 'Leeds, UK'
 PROFILE_SILPH_CARD_URL = 'https://sil.ph/test'
+
+ANOTHER_PROFILE_NAME = 'test2'
+ANOTHER_PROFILE_LOCATION = 'London, UK'
+ANOTHER_PROFILE_SILPH_CARD_URL = 'https://sil.ph/test2'
 
 IMAGE_URL = 'https://test.com/meh.jpg'
 
@@ -31,6 +36,16 @@ def create_user():
     return User.objects.get(username=USER_NAME)
 
 
+def create_another_user():
+    """
+    Create another user
+    """
+    user = User.objects.get_or_create(username=ANOTHER_USER)[0]
+    user.set_password(ANOTHER_USER)
+    user.save()
+    return User.objects.get(username=ANOTHER_USER)
+
+
 def create_profile():
     """
     Create a Profile
@@ -44,6 +59,19 @@ def create_profile():
         silph_card=PROFILE_SILPH_CARD_URL
     )
     return Profile.objects.get(name=PROFILE_NAME)
+
+
+def create_another_profile():
+    """
+    Create another profile
+    """
+    Profile.objects.get_or_create(
+        user=create_another_user(),
+        name=ANOTHER_PROFILE_NAME,
+        location=ANOTHER_PROFILE_LOCATION,
+        silph_card=ANOTHER_PROFILE_SILPH_CARD_URL
+    )
+    return Profile.objects.get(name=ANOTHER_PROFILE_NAME)
 
 
 def create_pokemon():

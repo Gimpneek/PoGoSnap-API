@@ -26,7 +26,7 @@ class TestProfileCollectionVerbs(TestProfileVerbsCommon):
     Test the HTTP Verb access of Profile Collection
     """
 
-    def test_not_logged_in(self):
+    def test_get_unauth(self):
         """
         Test that when user isn't authenticated read is allowed
         """
@@ -56,10 +56,34 @@ class TestProfileCollectionVerbs(TestProfileVerbsCommon):
             format='json')
         self.assertEqual(resp.status_code, 405)
 
+    def test_post_unauth(self):
+        """
+        Test that post is blocked when unauthorised
+        """
+        self.api.logout()
+        resp = self.api.post(
+            self.url,
+            {
+                'user': 1,
+                'name': 'test',
+                'location': 'test',
+                'silph_card': 'test'
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 405)
+
     def test_delete_blocked(self):
         """
         Test that delete requests are not allowed
         """
+        resp = self.api.delete(self.url)
+        self.assertEqual(resp.status_code, 405)
+
+    def test_delete_unauth(self):
+        """
+        Test that delete requests are blocked when unauthorised
+        """
+        self.api.logout()
         resp = self.api.delete(self.url)
         self.assertEqual(resp.status_code, 405)
 
@@ -77,6 +101,22 @@ class TestProfileCollectionVerbs(TestProfileVerbsCommon):
             },
             format='json'
         )
+        self.assertEqual(resp.status_code, 405)
+
+    def test_put_unauth(self):
+        """
+        Test that PUT is blocked when unauthorised
+        """
+        self.api.logout()
+        resp = self.api.put(
+            self.url,
+            {
+                'user': 1,
+                'name': 'test',
+                'location': 'test',
+                'silph_card': 'test'
+            },
+            format='json')
         self.assertEqual(resp.status_code, 405)
 
 
@@ -90,7 +130,7 @@ class TestProfileResourceVerbs(TestProfileVerbsCommon):
         super(TestProfileResourceVerbs, self).setUp()
         self.url = '/api/v1/profiles/1/'
 
-    def test_not_logged_in(self):
+    def test_get_unauth(self):
         """
         Test that when user isn't authenticated read is allowed
         """
@@ -120,10 +160,34 @@ class TestProfileResourceVerbs(TestProfileVerbsCommon):
             format='json')
         self.assertEqual(resp.status_code, 405)
 
+    def test_post_unauth(self):
+        """
+        Test that post is blocked when unauthorised
+        """
+        self.api.logout()
+        resp = self.api.post(
+            self.url,
+            {
+                'user': 1,
+                'name': 'test',
+                'location': 'test',
+                'silph_card': 'test'
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 405)
+
     def test_delete_blocked(self):
         """
         Test that delete requests are not allowed
         """
+        resp = self.api.delete(self.url)
+        self.assertEqual(resp.status_code, 405)
+
+    def test_delete_unauth(self):
+        """
+        Test that delete is blocked when unauthorised
+        """
+        self.api.logout()
         resp = self.api.delete(self.url)
         self.assertEqual(resp.status_code, 405)
 
@@ -141,4 +205,19 @@ class TestProfileResourceVerbs(TestProfileVerbsCommon):
             },
             format='json'
         )
+        self.assertEqual(resp.status_code, 405)
+
+    def test_put_unauth(self):
+        """
+        Test that PUT is blocked when unauthorised
+        """
+        resp = self.api.put(
+            self.url,
+            {
+                'user': 1,
+                'name': 'test',
+                'location': 'test',
+                'silph_card': 'test'
+            },
+            format='json')
         self.assertEqual(resp.status_code, 405)

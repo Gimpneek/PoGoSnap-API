@@ -26,6 +26,8 @@ class ImageViewSet(viewsets.ModelViewSet):
         :param kwargs:
         :return:
         """
+        if not request.user.id:
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
         form = ImageForm(request.data)
         if form.is_valid():
             profile = Profile.objects.get(user=request.user.id)
