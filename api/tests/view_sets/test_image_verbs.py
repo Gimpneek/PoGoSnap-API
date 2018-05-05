@@ -1,4 +1,5 @@
 """ Test the HTTP Verbs of Image """
+import allure
 from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
@@ -23,6 +24,8 @@ class TestImageVerbsCommon(TestCase):
         self.url = '/api/v1/images/'
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-26')
+@allure.story('See list of pokemon pictures')
 class TestImageCollectionVerbs(TestImageVerbsCommon):
     """
     Test the HTTP Verb access of Image Collection
@@ -92,6 +95,8 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
         self.assertEqual(resp.status_code, 405)
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-29')
+@allure.story('View Image')
 class TestImageResourceVerbs(TestImageVerbsCommon):
     """ Test the HTTP Verb access of Image Resource """
 

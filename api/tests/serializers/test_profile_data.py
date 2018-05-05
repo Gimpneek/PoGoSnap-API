@@ -1,4 +1,5 @@
 """ Test the API for Profile """
+import allure
 from rest_framework.test import APIClient
 from api.tests.serializers.common.profile import ProfileSerializerCase
 from api.tests.common.test_data import create_profile
@@ -43,6 +44,8 @@ class TestProfileCollectionData(ProfileSerializerCase):
             self.result.get('silph_card'), self.profile.silph_card)
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-37')
+@allure.story('View Player Profile')
 class TestProfileResourceData(ProfileSerializerCase):
     """
     Test the profile resource endpoint data structure

@@ -1,4 +1,5 @@
 """ Test the HTTP Verbs of profile """
+import allure
 from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, USER_NAME
@@ -79,6 +80,8 @@ class TestProfileCollectionVerbs(TestProfileVerbsCommon):
         self.assertEqual(resp.status_code, 405)
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-37')
+@allure.story('View Player Profile')
 class TestProfileResourceVerbs(TestProfileVerbsCommon):
     """ Test the HTTP Verb access of Profile Resource """
 

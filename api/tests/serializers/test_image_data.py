@@ -1,10 +1,13 @@
 """ Test the API for Image """
+import allure
 from rest_framework.test import APIClient
 from api.tests.serializers.common.image import ImageSerializerCase
 from api.tests.common.test_data import create_image, create_profile, \
     create_pokemon
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-26')
+@allure.story('See list of pokemon pictures')
 class TestImageCollectionData(ImageSerializerCase):
     """
     Test the Image collection endpoints data structure
@@ -89,6 +92,8 @@ class TestImageCollectionData(ImageSerializerCase):
         )
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-29')
+@allure.story('View Image')
 class TestImageResourceData(ImageSerializerCase):
     """
     Test the Image resource endpoint data structure
