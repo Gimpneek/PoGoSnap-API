@@ -3,3 +3,4 @@ gunicorn==19.8.0
 whitenoise==3.3.1
 djangorestframework==3.8.2
 drf-nested-routers==0.90.2
+djangorestframework-jwt==1.11.0
