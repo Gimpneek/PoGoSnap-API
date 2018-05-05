@@ -31,7 +31,7 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
     Test the HTTP Verb access of Image Collection
     """
 
-    def test_not_logged_in(self):
+    def test_get_unauth(self):
         """
         Test that when user isn't authenticated read is allowed
         """
@@ -73,6 +73,20 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
         )
         self.assertEqual(resp.status_code, 400)
 
+    def test_post_unauth(self):
+        """
+        Test that when sending to POST when not logged in returns an error
+        """
+        self.api.logout()
+        resp = self.api.post(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'url': 'http://meh.jpg'
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 401)
+
     def test_delete_blocked(self):
         """
         Test that delete requests are not allowed
@@ -80,10 +94,33 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
         resp = self.api.delete(self.url)
         self.assertEqual(resp.status_code, 405)
 
+    def test_delete_unauth(self):
+        """
+        Test that DELETE is blocked when not authorised
+        """
+        self.api.logout()
+        resp = self.api.delete(self.url)
+        self.assertEqual(resp.status_code, 405)
+
     def test_put_blocked(self):
         """
         Test that the PUT verb is not allowed
         """
+        resp = self.api.put(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'url': 'http://meh.jpg'
+            },
+            format='json'
+        )
+        self.assertEqual(resp.status_code, 405)
+
+    def test_put_unauth(self):
+        """
+        Test that PUT is blocked when not authorised
+        """
+        self.api.logout()
         resp = self.api.put(
             self.url,
             {
@@ -105,7 +142,7 @@ class TestImageResourceVerbs(TestImageVerbsCommon):
         super(TestImageResourceVerbs, self).setUp()
         self.url = '/api/v1/profiles/1/'
 
-    def test_not_logged_in(self):
+    def test_get_unauth(self):
         """
         Test that when user isn't authenticated read is allowed
         """
@@ -133,10 +170,32 @@ class TestImageResourceVerbs(TestImageVerbsCommon):
             format='json')
         self.assertEqual(resp.status_code, 405)
 
+    def test_post_unauth(self):
+        """
+        Test that post request is blocked when not auth
+        """
+        self.api.logout()
+        resp = self.api.post(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'url': 'http://meh.jpg'
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 405)
+
     def test_delete_blocked(self):
         """
         Test that delete requests are not allowed
         """
+        resp = self.api.delete(self.url)
+        self.assertEqual(resp.status_code, 405)
+
+    def test_delete_unauth(self):
+        """
+        Test that delete is blocked when not authorised
+        """
+        self.api.logout()
         resp = self.api.delete(self.url)
         self.assertEqual(resp.status_code, 405)
 
@@ -152,4 +211,18 @@ class TestImageResourceVerbs(TestImageVerbsCommon):
             },
             format='json'
         )
+        self.assertEqual(resp.status_code, 405)
+
+    def test_put_unauth(self):
+        """
+        Test that PUT is blocked when not authorised
+        """
+        self.api.logout()
+        resp = self.api.put(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'url': 'http://meh.jpg'
+            },
+            format='json')
         self.assertEqual(resp.status_code, 405)

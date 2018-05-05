@@ -45,6 +45,10 @@ class PokedexEntryViewSet(viewsets.GenericViewSet,
         :param profile_pk: ID of the profile to create PokedexEntry for
         :return: Response code
         """
+        if not request.user.id:
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
+        if request.user.id != int(profile_pk):
+            return Response(status=status.HTTP_403_FORBIDDEN)
         form = PokedexEntryForm(request.data)
         if form.is_valid():
             pokemon = Pokemon.objects.get(id=form.data.get('pokemon'))

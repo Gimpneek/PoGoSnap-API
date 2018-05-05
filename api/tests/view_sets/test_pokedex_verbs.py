@@ -3,7 +3,8 @@ import allure
 from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
-    create_image, create_pokedex, create_pokedex_entry, USER_NAME
+    create_image, create_pokedex, create_pokedex_entry, USER_NAME, \
+    create_another_profile
 
 
 class TestPokedexVerbsCommon(TestCase):
@@ -35,7 +36,7 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
     Test the HTTP Verb access of Pokedex Collection
     """
 
-    def test_not_logged_in(self):
+    def test_get_unauth(self):
         """
         Test that when user isn't authenticated read is allowed
         """
@@ -77,10 +78,46 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
         )
         self.assertEqual(resp.status_code, 400)
 
+    def test_post_other_user(self):
+        """
+        Test that post to another User's pokedex is not allowed
+        """
+        create_another_profile()
+        resp = self.api.post(
+            '/api/v1/profiles/2/pokedex/',
+            {
+                'pokemon': self.pokemon.id,
+                'image': self.image.id
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 403)
+
+    def test_post_unauth(self):
+        """
+        Test that post isn't allowed when unauthorised
+        """
+        self.api.logout()
+        resp = self.api.post(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'image': self.image.id
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 401)
+
     def test_delete_blocked(self):
         """
         Test that delete requests are not allowed
         """
+        resp = self.api.delete(self.url)
+        self.assertEqual(resp.status_code, 405)
+
+    def test_delete_unauth(self):
+        """
+        Test that delete is blocked when unauthorised
+        """
+        self.api.logout()
         resp = self.api.delete(self.url)
         self.assertEqual(resp.status_code, 405)
 
@@ -98,6 +135,20 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
         )
         self.assertEqual(resp.status_code, 405)
 
+    def test_put_unauth(self):
+        """
+        Test that PUT is blocked when unauthorised
+        """
+        self.api.logout()
+        resp = self.api.put(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'url': 'http://meh.jpg'
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 405)
+
 
 @allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
 class TestPokedexResourceVerbs(TestPokedexVerbsCommon):
@@ -108,7 +159,7 @@ class TestPokedexResourceVerbs(TestPokedexVerbsCommon):
         super(TestPokedexResourceVerbs, self).setUp()
         self.url = '/api/v1/profiles/1/pokedex/1/'
 
-    def test_not_logged_in(self):
+    def test_get_unauth(self):
         """
         Test that when user isn't authenticated read is allowed
         """
@@ -136,10 +187,32 @@ class TestPokedexResourceVerbs(TestPokedexVerbsCommon):
             format='json')
         self.assertEqual(resp.status_code, 404)
 
+    def test_post_unauth(self):
+        """
+        Test that POST is blocked when unauthorised
+        """
+        self.api.logout()
+        resp = self.api.post(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'url': 'http://meh.jog'
+            },
+            format='json')
+        self.assertEqual(resp.status_code, 404)
+
     def test_delete_blocked(self):
         """
         Test that delete requests are not allowed
         """
+        resp = self.api.delete(self.url)
+        self.assertEqual(resp.status_code, 404)
+
+    def test_delete_unauth(self):
+        """
+        Test that delete is bloeck when unauthorised
+        """
+        self.api.logout()
         resp = self.api.delete(self.url)
         self.assertEqual(resp.status_code, 404)
 
@@ -155,4 +228,18 @@ class TestPokedexResourceVerbs(TestPokedexVerbsCommon):
             },
             format='json'
         )
+        self.assertEqual(resp.status_code, 404)
+
+    def test_put_unauth(self):
+        """
+        Test that PUT is blocked when unauthorised
+        """
+        self.api.logout()
+        resp = self.api.put(
+            self.url,
+            {
+                'pokemon': self.pokemon.id,
+                'url': 'http://meh.jpg'
+            },
+            format='json')
         self.assertEqual(resp.status_code, 404)
