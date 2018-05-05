@@ -1,6 +1,7 @@
 """ Tests for JSON Web Token endpoint """
 from django.test import TestCase
-from api.tests.common.test_data import create_profile, USER_NAME, create_pokemon
+from api.tests.common.test_data import create_profile, USER_NAME, \
+    create_pokemon
 
 
 class TestJwtAuth(TestCase):
