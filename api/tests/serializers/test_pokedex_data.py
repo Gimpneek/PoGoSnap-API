@@ -1,10 +1,13 @@
 """ Test the API for Pokedex """
+import allure
 from rest_framework.test import APIClient
 from api.tests.serializers.common.pokedex import PokedexSerializerCase
 from api.tests.common.test_data import create_image, create_profile, \
     create_pokemon, create_pokedex_entry, create_pokedex
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
+@allure.story('User\'s Pokedex')
 class TestPokedexCollectionData(PokedexSerializerCase):
     """
     Test the Pokedex collection endpoints data structure

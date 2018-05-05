@@ -1,4 +1,5 @@
 """ Test the HTTP Verbs of Pokedex """
+import allure
 from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
@@ -27,6 +28,8 @@ class TestPokedexVerbsCommon(TestCase):
         self.url = '/api/v1/profiles/1/pokedex/'
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
+@allure.story('User\'s Pokedex')
 class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
     """
     Test the HTTP Verb access of Pokedex Collection
@@ -96,6 +99,7 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
         self.assertEqual(resp.status_code, 405)
 
 
+@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
 class TestPokedexResourceVerbs(TestPokedexVerbsCommon):
     """ Test the HTTP Verb access of Image Resource """
 
