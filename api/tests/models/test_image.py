@@ -35,3 +35,12 @@ class TestImageObject(TestCase):
         Test the Profile passed is saved to the object
         """
         self.assertEqual(self.image.profile.id, self.profile.id)
+
+    def test_string_rep(self):
+        """
+        Test the string representation of the object
+        """
+        self.assertEqual(
+            str(self.image),
+            "Picture of {0} by {1}".format(self.pokemon, self.profile)
+        )
