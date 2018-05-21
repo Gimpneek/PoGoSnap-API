@@ -11,3 +11,7 @@ class Image(models.Model):
     url = models.URLField()
     pokemon = models.ForeignKey(Pokemon, on_delete=models.DO_NOTHING)
     profile = models.ForeignKey(Profile, on_delete=models.DO_NOTHING)
+
+    def __str__(self):
+        """ String representation of Image """
+        return "Picture of {0} by {1}".format(self.pokemon, self.profile)

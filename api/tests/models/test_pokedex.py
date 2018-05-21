@@ -31,3 +31,12 @@ class TestPokedexObject(TestCase):
         """
         self.assertEqual(
             self.pokedex.entries.all()[0].id, self.pokedex_entry.id)
+
+    def test_string_rep(self):
+        """
+        Test the string representation of the object
+        """
+        self.assertEqual(
+            str(self.pokedex),
+            "{0}'s Pokedex".format(self.profile)
+        )

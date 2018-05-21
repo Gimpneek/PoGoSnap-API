@@ -43,3 +43,12 @@ class TestProfileObject(TestCase):
         Test that silph card passed on creation is saved to the object
         """
         self.assertEqual(self.profile.silph_card, PROFILE_SILPH_CARD_URL)
+
+    def test_string_rep(self):
+        """
+        Test the string representation of the object
+        """
+        self.assertEqual(
+            str(self.profile),
+            "{0}".format(PROFILE_NAME)
+        )

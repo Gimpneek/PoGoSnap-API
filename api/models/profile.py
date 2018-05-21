@@ -19,3 +19,7 @@ class Profile(models.Model):
         help_text='URL of User\'s Silph Card',
         max_length=128
     )
+
+    def __str__(self):
+        """ String representation of object """
+        return "{0}".format(self.user.username)

@@ -1,7 +1,8 @@
 """ Tests for Pokedex Entry Model """
 from django.test import TestCase
 from api.models.pokedex_entry import PokedexEntry
-from api.tests.common.test_data import create_pokemon, create_image
+from api.tests.common.test_data import create_pokemon, create_image, \
+    create_pokedex, create_profile
 
 
 class TestPokedexEntryObject(TestCase):
@@ -9,12 +10,14 @@ class TestPokedexEntryObject(TestCase):
 
     def setUp(self):
         """ Set up the tests """
+        self.profile = create_profile()
         self.image = create_image()
         self.pokemon = create_pokemon()
         self.pokedex_entry = PokedexEntry.objects.create(
             image=self.image,
             pokemon=self.pokemon
         )
+        self.pokedex = create_pokedex(self.profile, [self.pokedex_entry])
 
     def test_image(self):
         """
@@ -29,3 +32,12 @@ class TestPokedexEntryObject(TestCase):
         correctly
         """
         self.assertEqual(self.pokedex_entry.pokemon.id, self.pokemon.id)
+
+    def test_string_rep(self):
+        """
+        Test the string representation of the object
+        """
+        self.assertEqual(
+            str(self.pokedex_entry),
+            "{0} image in {1}'s Pokedex".format(self.pokemon, self.profile)
+        )
