@@ -11,3 +11,8 @@ class PokedexEntry(models.Model):
     """
     pokemon = models.ForeignKey(Pokemon, on_delete=models.DO_NOTHING)
     image = models.ForeignKey(Image, on_delete=models.DO_NOTHING)
+
+    def __str__(self):
+        """ String representation of Pokedex Entry object """
+        return "{0} image in {1}".format(
+            self.pokemon, self.pokedex_set.first())

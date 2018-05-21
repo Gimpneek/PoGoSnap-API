@@ -10,3 +10,7 @@ class Pokedex(models.Model):
 
     entries = models.ManyToManyField(PokedexEntry, blank=True)
     profile = models.OneToOneField(Profile, on_delete=models.DO_NOTHING)
+
+    def __str__(self):
+        """ String representation of the Pokedex object """
+        return "{0}'s Pokedex".format(self.profile)

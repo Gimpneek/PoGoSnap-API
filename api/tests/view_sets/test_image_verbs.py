@@ -1,6 +1,8 @@
 """ Test the HTTP Verbs of Image """
 import allure
 from django.test import TestCase
+from django.core.files import File
+from unittest.mock import MagicMock
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
     create_image, USER_NAME
@@ -50,13 +52,15 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
         """
         Test that post requests are allowed
         """
+        file_mock = MagicMock(spec=File, name='FileMock')
+        file_mock.name = 'test.jpg'
         resp = self.api.post(
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': file_mock
             },
-            format='json')
+            format='multipart')
         self.assertEqual(resp.status_code, 201)
 
     def test_post_error(self):

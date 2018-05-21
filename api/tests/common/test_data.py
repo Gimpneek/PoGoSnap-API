@@ -99,7 +99,6 @@ def create_image(profile=None, pokemon=None):
     if not pokemon:
         pokemon = create_pokemon()
     return Image.objects.create(
-        url=IMAGE_URL,
         pokemon=pokemon,
         profile=profile
     )

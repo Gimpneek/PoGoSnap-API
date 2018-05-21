@@ -25,3 +25,12 @@ class TestPokemonObject(TestCase):
         Test the dex number passed on creation is saved on the object
         """
         self.assertEqual(self.pokemon.dex_number, POKEMON_NUMBER)
+
+    def test_string_rep(self):
+        """
+        Test the string representation of the object
+        """
+        self.assertEqual(
+            str(self.pokemon),
+            "{0}(#{1})".format(POKEMON_NAME, POKEMON_NUMBER)
+        )

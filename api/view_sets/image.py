@@ -28,12 +28,12 @@ class ImageViewSet(viewsets.ModelViewSet):
         """
         if not request.user.id:
             return Response(status=status.HTTP_401_UNAUTHORIZED)
-        form = ImageForm(request.data)
+        form = ImageForm(request.POST, request.data)
         if form.is_valid():
             profile = Profile.objects.get(user=request.user.id)
             pokemon = Pokemon.objects.get(id=form.data.get('pokemon'))
             Image.objects.create(
-                url=form.cleaned_data.get('url'),
+                image=form.cleaned_data.get('image'),
                 pokemon=pokemon,
                 profile=profile
             )

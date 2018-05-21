@@ -12,3 +12,7 @@ class Pokemon(models.Model):
     dex_number = models.SmallIntegerField(
         help_text='Number of the Pokemon in the Pokedex'
     )
+
+    def __str__(self):
+        """ String represenation of Pokemon """
+        return "{0}(#{1})".format(self.name, self.dex_number)
