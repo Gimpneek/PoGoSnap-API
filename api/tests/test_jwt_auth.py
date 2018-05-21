@@ -1,7 +1,7 @@
 """ Tests for JSON Web Token endpoint """
 from django.test import TestCase
 from api.tests.common.test_data import create_profile, USER_NAME, \
-    create_pokemon
+    create_pokemon, create_image, create_pokedex_entry, create_pokedex
 
 
 class TestJwtAuth(TestCase):
@@ -14,9 +14,14 @@ class TestJwtAuth(TestCase):
         Set up tests
         """
         super(TestJwtAuth, self).setUp()
-        self.user = create_profile()
+        self.profile = create_profile()
         self.pokemon = create_pokemon()
-        self.url = '/api/v1/images/'
+        self.image = create_image(profile=self.profile, pokemon=self.pokemon)
+        self.entry = \
+            create_pokedex_entry(image=self.image, pokemon=self.pokemon)
+        self.pokedex = \
+            create_pokedex(profile=self.profile, entries=[self.entry])
+        self.url = '/api/v1/profiles/1/pokedex/'
 
     def test_unauthed(self):
         """
@@ -78,7 +83,7 @@ class TestJwtAuth(TestCase):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': self.image.id
             },
             HTTP_AUTHORIZATION='Bearer {}'.format(token),
             format='json')

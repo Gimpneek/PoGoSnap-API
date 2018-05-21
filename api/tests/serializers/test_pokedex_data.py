@@ -64,9 +64,12 @@ class TestPokedexCollectionData(PokedexSerializerCase):
 
     def test_image_url(self):
         """
-        Test the image.url property of the collection
+        Test the image.image property of the collection
         """
-        self.assertEqual(self.result.get('image').get('url'), self.image.url)
+        self.assertEqual(
+            self.result.get('image').get('image'),
+            self.image.image.name
+        )
 
     def test_image_pkmn_id(self):
         """
