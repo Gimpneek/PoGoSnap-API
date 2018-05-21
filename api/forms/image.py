@@ -11,6 +11,6 @@ class ImageForm(ModelForm):
         """ Metaclass for Image form """
         model = Image
         fields = (
-            'url',
+            'image',
             'pokemon'
         )

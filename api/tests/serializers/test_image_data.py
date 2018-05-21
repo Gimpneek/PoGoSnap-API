@@ -33,7 +33,7 @@ class TestImageCollectionData(ImageSerializerCase):
         """
         Test the url property of the collection
         """
-        self.assertEqual(self.result.get('url'), self.image.url)
+        self.assertEqual(self.result.get('image'), self.image.image.name)
 
     def test_collection_profile_id(self):
         """
@@ -122,7 +122,7 @@ class TestImageResourceData(ImageSerializerCase):
         """
         Test the name property of the resource
         """
-        self.assertEqual(self.result.get('url'), self.image.url)
+        self.assertEqual(self.result.get('image'), self.image.image.name)
 
     def test_resource_profile_id(self):
         """

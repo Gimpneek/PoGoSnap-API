@@ -13,16 +13,16 @@ class TestImageObject(TestCase):
         self.pokemon = create_pokemon()
         self.profile = create_profile()
         self.image = Image.objects.create(
-            url=IMAGE_URL,
+            image=IMAGE_URL,
             pokemon=self.pokemon,
             profile=self.profile
         )
 
-    def test_url(self):
+    def test_image(self):
         """
         Test the URL passed is saved to the object
         """
-        self.assertEqual(self.image.url, IMAGE_URL)
+        self.assertEqual(self.image.image.name, IMAGE_URL)
 
     def test_pokemon(self):
         """
