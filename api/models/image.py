@@ -26,6 +26,10 @@ class Image(models.Model):
     image = models.FileField(
         upload_to=get_file_path,
         default=None)
+    description = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True)
     pokemon = models.ForeignKey(Pokemon, on_delete=models.DO_NOTHING)
     profile = models.ForeignKey(Profile, on_delete=models.DO_NOTHING)
 

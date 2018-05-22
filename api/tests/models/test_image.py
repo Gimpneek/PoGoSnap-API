@@ -2,7 +2,7 @@
 from django.test import TestCase
 from api.models.image import Image
 from api.tests.common.test_data import create_pokemon, create_profile, \
-    IMAGE_URL
+    IMAGE_URL, IMAGE_DESC
 
 
 class TestImageObject(TestCase):
@@ -15,7 +15,8 @@ class TestImageObject(TestCase):
         self.image = Image.objects.create(
             image=IMAGE_URL,
             pokemon=self.pokemon,
-            profile=self.profile
+            profile=self.profile,
+            description=IMAGE_DESC
         )
 
     def test_image(self):
@@ -35,6 +36,12 @@ class TestImageObject(TestCase):
         Test the Profile passed is saved to the object
         """
         self.assertEqual(self.image.profile.id, self.profile.id)
+
+    def test_description(self):
+        """
+        Test the description passed is save to the object
+        """
+        self.assertEqual(self.image.description, IMAGE_DESC)
 
     def test_string_rep(self):
         """
