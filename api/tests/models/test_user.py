@@ -3,7 +3,7 @@ from django.test import TestCase
 from django.contrib.auth.models import User
 from api.models.profile import Profile
 from api.tests.common.test_data import USER_NAME, PROFILE_NAME, \
-    PROFILE_LOCATION, PROFILE_SILPH_CARD_URL
+    PROFILE_LOCATION, PROFILE_SILPH_CARD_URL, create_image
 
 
 class TestProfileObject(TestCase):
@@ -19,6 +19,9 @@ class TestProfileObject(TestCase):
             location=PROFILE_LOCATION,
             silph_card=PROFILE_SILPH_CARD_URL
         )
+        self.image = create_image(profile=self.profile)
+        self.profile.featured_image = self.image
+        self.profile.save()
 
     def test_user(self):
         """
@@ -43,6 +46,12 @@ class TestProfileObject(TestCase):
         Test that silph card passed on creation is saved to the object
         """
         self.assertEqual(self.profile.silph_card, PROFILE_SILPH_CARD_URL)
+
+    def test_featured_image(self):
+        """
+        Test that featured_image saved to profile is saved to the object
+        """
+        self.assertEqual(self.profile.featured_image, self.image)
 
     def test_string_rep(self):
         """
