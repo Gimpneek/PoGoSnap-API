@@ -22,6 +22,7 @@ ANOTHER_PROFILE_LOCATION = 'London, UK'
 ANOTHER_PROFILE_SILPH_CARD_URL = 'https://sil.ph/test2'
 
 IMAGE_URL = 'https://test.com/meh.jpg'
+IMAGE_DESC = 'Image of a pokemon'
 
 
 def create_user():
@@ -100,7 +101,8 @@ def create_image(profile=None, pokemon=None):
         pokemon = create_pokemon()
     return Image.objects.create(
         pokemon=pokemon,
-        profile=profile
+        profile=profile,
+        description=IMAGE_DESC
     )
 
 

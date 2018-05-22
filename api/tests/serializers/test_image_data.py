@@ -118,11 +118,18 @@ class TestImageResourceData(ImageSerializerCase):
         """
         self.assertEqual(self.result.get('id'), self.image.id)
 
-    def test_resource_url(self):
+    def test_resource_image(self):
         """
         Test the name property of the resource
         """
         self.assertEqual(self.result.get('image'), self.image.image.name)
+
+    def test_resource_desc(self):
+        """
+        Test the description property of the resource
+        """
+        self.assertEqual(
+            self.result.get('description'), self.image.description)
 
     def test_resource_profile_id(self):
         """

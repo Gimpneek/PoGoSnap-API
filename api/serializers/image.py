@@ -18,6 +18,7 @@ class ImageSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'image',
+            'description',
             'pokemon',
             'profile'
         )
