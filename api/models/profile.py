@@ -20,6 +20,13 @@ class Profile(models.Model):
         max_length=128
     )
 
+    featured_image = models.ForeignKey(
+        'api.Image',
+        related_name='featured_image',
+        null=True,
+        blank=True,
+        on_delete=models.DO_NOTHING)
+
     def __str__(self):
         """ String representation of object """
         return "{0}".format(self.user.username)

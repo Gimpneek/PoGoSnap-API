@@ -1,5 +1,7 @@
 """ Common Test Data and functions """
 from django.contrib.auth.models import User
+from django.core.files import File
+from unittest.mock import MagicMock
 from api.models.profile import Profile
 from api.models.pokemon import Pokemon
 from api.models.image import Image
@@ -95,11 +97,14 @@ def create_image(profile=None, pokemon=None):
     :param pokemon: Pokemon object
     :return: Image object
     """
+    file_mock = MagicMock(spec=File, name='FileMock')
+    file_mock.name = 'test.jpg'
     if not profile:
         profile = create_profile()
     if not pokemon:
         pokemon = create_pokemon()
     return Image.objects.create(
+        image=file_mock,
         pokemon=pokemon,
         profile=profile,
         description=IMAGE_DESC

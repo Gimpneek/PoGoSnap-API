@@ -2,7 +2,7 @@
 import allure
 from rest_framework.test import APIClient
 from api.tests.serializers.common.profile import ProfileSerializerCase
-from api.tests.common.test_data import create_profile
+from api.tests.common.test_data import create_profile, create_image
 
 
 class TestProfileCollectionData(ProfileSerializerCase):
@@ -14,6 +14,9 @@ class TestProfileCollectionData(ProfileSerializerCase):
         """ Set up the test """
         super(TestProfileCollectionData, self).setUp()
         self.profile = create_profile()
+        self.image = create_image(profile=self.profile)
+        self.profile.featured_image = self.image
+        self.profile.save()
         self.api = APIClient()
         resp = self.api.get(self.url)
         self.result = resp.data.get('results')[0]
@@ -43,6 +46,14 @@ class TestProfileCollectionData(ProfileSerializerCase):
         self.assertEqual(
             self.result.get('silph_card'), self.profile.silph_card)
 
+    def test_collection_image(self):
+        """
+        Test the featured_image property of the profile endpoint
+        """
+        self.assertEqual(
+            self.result.get('image'),
+            self.profile.featured_image.image.name)
+
 
 @allure.issue('https://wrensoftware.atlassian.net/browse/GOS-37')
 @allure.story('View Player Profile')
@@ -57,6 +68,9 @@ class TestProfileResourceData(ProfileSerializerCase):
         """
         super(TestProfileResourceData, self).setUp()
         self.profile = create_profile()
+        self.image = create_image(profile=self.profile)
+        self.profile.featured_image = self.image
+        self.profile.save()
         self.api = APIClient()
         resp = self.api.get(
             '{url}{id}/'.format(url=self.url, id=self.profile.id))
@@ -86,3 +100,10 @@ class TestProfileResourceData(ProfileSerializerCase):
         """
         self.assertEqual(
             self.result.get('silph_card'), self.profile.silph_card)
+
+    def test_resource_image(self):
+        """
+        Test the featured_image property of the resource
+        """
+        self.assertTrue(
+            self.profile.featured_image.image.name in self.result.get('image'))
