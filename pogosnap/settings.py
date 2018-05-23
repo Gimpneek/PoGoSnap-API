@@ -40,12 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'frontend.apps.FrontendConfig',
-    'rest_framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -53,6 +54,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'pogosnap.urls'
 
@@ -127,7 +130,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'frontend/web_static/dist'
+STATIC_ROOT = os.path.join(BASE_DIR, 'frontend/static/dist')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend/static')
+]
 STATICFILES_STORAGE = \
         'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -158,7 +164,6 @@ if os.environ.get('PRODUCTION') == '1':
     AWS_QUERYSTRING_AUTH = False
     STATIC_URL = 'https://{0}.s3.amazonaws.com/'.format(
         AWS_STORAGE_BUCKET_NAME)
-    STATIC_ROOT = 'frontend/web_static/dist'
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
