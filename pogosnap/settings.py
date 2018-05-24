@@ -155,13 +155,13 @@ JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
 
-prod = os.environ.get('PRODUCTION', '0') == '1'
-staging = os.environ.get('STAGING', '0') == '1'
+PROD = os.environ.get('PRODUCTION', '0') == '1'
+STAGING = os.environ.get('STAGING', '0') == '1'
 
-if staging:
+if STAGING:
     ALLOWED_HOSTS.append('pogosnap-staging.herokuapp.com')
 
-if prod or staging:
+if PROD or STAGING:
     DB_FROM_ENV = dj_database_url.config(conn_max_age=500)
     DATABASES['default'].update(DB_FROM_ENV)
     INSTALLED_APPS.append('storages')
