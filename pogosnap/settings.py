@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'frontend.apps.FrontendConfig',
-    'rest_framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
+
 
 ROOT_URLCONF = 'pogosnap.urls'
 
@@ -127,7 +129,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'frontend/web_static/dist'
+STATIC_ROOT = os.path.join(BASE_DIR, 'frontend/static/dist')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend/static')
+]
 STATICFILES_STORAGE = \
         'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -150,7 +155,15 @@ JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
 
-if os.environ.get('PRODUCTION') == '1':
+PROD = os.environ.get('PRODUCTION', '0') == '1'
+STAGING = os.environ.get('STAGING', '0') == '1'
+
+if STAGING:
+    ALLOWED_HOSTS.append('pogosnap-staging.herokuapp.com')
+
+if PROD or STAGING:
+    DB_FROM_ENV = dj_database_url.config(conn_max_age=500)
+    DATABASES['default'].update(DB_FROM_ENV)
     INSTALLED_APPS.append('storages')
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -158,7 +171,6 @@ if os.environ.get('PRODUCTION') == '1':
     AWS_QUERYSTRING_AUTH = False
     STATIC_URL = 'https://{0}.s3.amazonaws.com/'.format(
         AWS_STORAGE_BUCKET_NAME)
-    STATIC_ROOT = 'frontend/web_static/dist'
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
