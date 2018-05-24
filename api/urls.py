@@ -5,6 +5,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 from api.view_sets.profile import ProfileViewSet
 from api.view_sets.image import ImageViewSet
 from api.view_sets.pokedex_entry import PokedexEntryViewSet
+from api.view_sets.profiles_images import ProfileImageViewSet
 
 API_ROUTER = routers.SimpleRouter()
 API_ROUTER.register(r'profiles', ProfileViewSet, base_name='profiles')
@@ -16,6 +17,11 @@ PROFILE_ROUTER = routers.NestedSimpleRouter(
     lookup='profile'
 )
 PROFILE_ROUTER.register(r'pokedex', PokedexEntryViewSet, base_name='pokedex')
+PROFILE_ROUTER.register(
+    r'images',
+    ProfileImageViewSet,
+    base_name='profile_images'
+)
 
 
 urlpatterns = [
