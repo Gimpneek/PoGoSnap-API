@@ -21,7 +21,7 @@ class TestJwtAuth(TestCase):
             create_pokedex_entry(image=self.image, pokemon=self.pokemon)
         self.pokedex = \
             create_pokedex(profile=self.profile, entries=[self.entry])
-        self.url = '/api/v1/profiles/1/pokedex/'
+        self.url = '/api/v1/profiles/{0}/pokedex/'.format(self.profile.name)
 
     def test_unauthed(self):
         """

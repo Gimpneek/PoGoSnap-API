@@ -4,7 +4,7 @@ from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
     create_image, create_pokedex, create_pokedex_entry, USER_NAME, \
-    create_another_profile
+    create_another_profile, ANOTHER_PROFILE_NAME
 
 
 class TestPokedexVerbsCommon(TestCase):
@@ -26,7 +26,7 @@ class TestPokedexVerbsCommon(TestCase):
         self.api.login(
             username=USER_NAME,
             password=USER_NAME)
-        self.url = '/api/v1/profiles/1/pokedex/'
+        self.url = '/api/v1/profiles/{0}/pokedex/'.format(self.profile.name)
 
 
 @allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
@@ -84,7 +84,7 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
         """
         create_another_profile()
         resp = self.api.post(
-            '/api/v1/profiles/2/pokedex/',
+            '/api/v1/profiles/{0}/pokedex/'.format(ANOTHER_PROFILE_NAME),
             {
                 'pokemon': self.pokemon.id,
                 'image': self.image.id

@@ -128,7 +128,7 @@ class TestProfileResourceVerbs(TestProfileVerbsCommon):
     def setUp(self):
         """ Setup the tests """
         super(TestProfileResourceVerbs, self).setUp()
-        self.url = '/api/v1/profiles/1/'
+        self.url = '/api/v1/profiles/{0}/'.format(self.profile.name)
 
     def test_get_unauth(self):
         """
