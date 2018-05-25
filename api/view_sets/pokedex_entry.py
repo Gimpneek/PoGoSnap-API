@@ -21,15 +21,15 @@ class PokedexEntryViewSet(viewsets.GenericViewSet,
     serializer_class = PokedexEntrySerializer
 
     # pylint: disable=arguments-differ
-    def list(self, request, profile_pk=None):
+    def list(self, request, profile_name=None):
         """
         List the entries from the supplied Profile's pokedex
 
         :param request: Django Request
-        :param profile_pk: ID of the profile to fetch PokedexEntries from
+        :param profile_name: Name of the profile to fetch PokedexEntries from
         :return: List of PokedexEntries
         """
-        profile = Profile.objects.get(id=profile_pk)
+        profile = Profile.objects.get(name__iexact=profile_name)
         pokedex = Pokedex.objects.get(profile=profile)
         page = self.paginate_queryset(
             pokedex.entries.all().order_by('pokemon__dex_number'))
@@ -37,17 +37,18 @@ class PokedexEntryViewSet(viewsets.GenericViewSet,
         return self.get_paginated_response(serialized.data)
 
     # pylint: disable=no-self-use
-    def create(self, request, profile_pk=None):
+    def create(self, request, profile_name=None):
         """
         Create a PokedexEntry
 
         :param request: Django Request
-        :param profile_pk: ID of the profile to create PokedexEntry for
+        :param profile_name: Name of the profile to create PokedexEntry for
         :return: Response code
         """
         if not request.user.id:
             return Response(status=status.HTTP_401_UNAUTHORIZED)
-        if request.user.id != int(profile_pk):
+        profile = Profile.objects.get(name__iexact=profile_name)
+        if request.user.id != profile.user.id:
             return Response(status=status.HTTP_403_FORBIDDEN)
         form = PokedexEntryForm(request.data)
         if form.is_valid():
@@ -57,7 +58,6 @@ class PokedexEntryViewSet(viewsets.GenericViewSet,
                 pokemon=pokemon,
                 image=image
             )
-            profile = Profile.objects.get(id=profile_pk)
             pokedex = Pokedex.objects.get(profile=profile)
             pokedex.entries.add(entry)
             pokedex.save()

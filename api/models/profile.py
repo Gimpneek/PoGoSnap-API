@@ -9,7 +9,8 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.DO_NOTHING)
     name = models.CharField(
         help_text='Name of the user',
-        max_length=128
+        max_length=128,
+        unique=True
     )
     location = models.CharField(
         help_text='Location of the user',

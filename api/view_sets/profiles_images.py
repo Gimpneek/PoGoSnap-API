@@ -16,15 +16,15 @@ class ProfileImageViewSet(viewsets.GenericViewSet,
     serializer_class = ImageSerializer
 
     # pylint: disable=arguments-differ
-    def list(self, request, profile_pk=None):
+    def list(self, request, profile_name=None):
         """
         List the images from the supplied Profile
 
         :param request: Django Request
-        :param profile_pk: ID of the profile to fetch Images from
+        :param profile_name: name of the profile to fetch Images from
         :return: List of Images
         """
-        profile = Profile.objects.get(id=profile_pk)
+        profile = Profile.objects.get(name__iexact=profile_name)
         images = Image.objects.filter(profile=profile)
         page = self.paginate_queryset(
             images.all().order_by('id'))

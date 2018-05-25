@@ -73,7 +73,7 @@ class TestProfileResourceData(ProfileSerializerCase):
         self.profile.save()
         self.api = APIClient()
         resp = self.api.get(
-            '{url}{id}/'.format(url=self.url, id=self.profile.id))
+            '{url}{id}/'.format(url=self.url, id=self.profile.name))
         self.result = resp.data
 
     def test_resource_id(self):
