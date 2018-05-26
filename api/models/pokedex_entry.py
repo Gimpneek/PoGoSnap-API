@@ -11,6 +11,7 @@ class PokedexEntry(models.Model):
     """
     pokemon = models.ForeignKey(Pokemon, on_delete=models.DO_NOTHING)
     image = models.ForeignKey(Image, on_delete=models.DO_NOTHING)
+    create_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         """ String representation of Pokedex Entry object """

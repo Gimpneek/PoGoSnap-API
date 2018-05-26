@@ -2,6 +2,9 @@
 """ View Set for Image Serializer """
 from rest_framework import viewsets, status
 from rest_framework.response import Response
+from django.db.models import Count
+from django.db.models.functions import ExtractYear, ExtractMonth, \
+    ExtractDay, ExtractHour
 from api.models.image import Image
 from api.models.profile import Profile
 from api.models.pokemon import Pokemon
@@ -14,7 +17,15 @@ class ImageViewSet(viewsets.ModelViewSet):
     View Set for Image Serializer
     """
 
-    queryset = Image.objects.all().order_by('id')
+    queryset = Image.objects.all() \
+        .annotate(
+            year=ExtractYear('create_date'),
+            month=ExtractMonth('create_date'),
+            day=ExtractDay('create_date'),
+            hour=ExtractHour('create_date'),
+            entries=Count('pokedexentry')
+        ).order_by('-year', '-month', '-day', '-hour', '-entries')
+
     serializer_class = ImageSerializer
 
     def create(self, request, *args, **kwargs):

@@ -1,6 +1,7 @@
 """ Tests for Image Model """
 from django.test import TestCase
 from api.models.image import Image
+from datetime import datetime
 from api.tests.common.test_data import create_pokemon, create_profile, \
     IMAGE_URL, IMAGE_DESC
 
@@ -18,6 +19,7 @@ class TestImageObject(TestCase):
             profile=self.profile,
             description=IMAGE_DESC
         )
+        self.nowish = datetime.now()
 
     def test_image(self):
         """
@@ -42,6 +44,30 @@ class TestImageObject(TestCase):
         Test the description passed is save to the object
         """
         self.assertEqual(self.image.description, IMAGE_DESC)
+
+    def test_create_date_year(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.image.create_date.year, self.nowish.year)
+
+    def test_create_date_month(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.image.create_date.month, self.nowish.month)
+
+    def test_create_date_day(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.image.create_date.day, self.nowish.day)
+
+    def test_create_date_hour(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.image.create_date.hour, self.nowish.hour)
 
     def test_string_rep(self):
         """

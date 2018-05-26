@@ -27,6 +27,7 @@ class Profile(models.Model):
         null=True,
         blank=True,
         on_delete=models.DO_NOTHING)
+    create_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         """ String representation of object """
