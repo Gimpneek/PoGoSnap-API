@@ -1,4 +1,5 @@
 """ Tests for Profile Model """
+from datetime import datetime
 from django.test import TestCase
 from django.contrib.auth.models import User
 from api.models.profile import Profile
@@ -22,6 +23,7 @@ class TestProfileObject(TestCase):
         self.image = create_image(profile=self.profile)
         self.profile.featured_image = self.image
         self.profile.save()
+        self.nowish = datetime.now()
 
     def test_user(self):
         """
@@ -52,6 +54,30 @@ class TestProfileObject(TestCase):
         Test that featured_image saved to profile is saved to the object
         """
         self.assertEqual(self.profile.featured_image, self.image)
+
+    def test_create_date_year(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.profile.create_date.year, self.nowish.year)
+
+    def test_create_date_month(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.profile.create_date.month, self.nowish.month)
+
+    def test_create_date_day(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.profile.create_date.day, self.nowish.day)
+
+    def test_create_date_hour(self):
+        """
+        Test the create_date passed is saved to the object
+        """
+        self.assertEqual(self.profile.create_date.hour, self.nowish.hour)
 
     def test_string_rep(self):
         """

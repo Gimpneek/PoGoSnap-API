@@ -30,6 +30,7 @@ class Image(models.Model):
         max_length=256,
         null=True,
         blank=True)
+    create_date = models.DateTimeField(auto_now_add=True)
     pokemon = models.ForeignKey(Pokemon, on_delete=models.DO_NOTHING)
     profile = models.ForeignKey(Profile, on_delete=models.DO_NOTHING)
 
