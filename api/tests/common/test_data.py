@@ -55,26 +55,26 @@ def create_profile():
 
     :return: Profile object
     """
-    Profile.objects.get_or_create(
-        user=create_user(),
-        name=PROFILE_NAME,
-        location=PROFILE_LOCATION,
-        silph_card=PROFILE_SILPH_CARD_URL
-    )
-    return Profile.objects.get(name=PROFILE_NAME)
+    create_user()
+    profile = Profile.objects.get(name=USER_NAME)
+    profile.name = PROFILE_NAME
+    profile.location = PROFILE_LOCATION
+    profile.silph_card = PROFILE_SILPH_CARD_URL
+    profile.save()
+    return profile
 
 
 def create_another_profile():
     """
     Create another profile
     """
-    Profile.objects.get_or_create(
-        user=create_another_user(),
-        name=ANOTHER_PROFILE_NAME,
-        location=ANOTHER_PROFILE_LOCATION,
-        silph_card=ANOTHER_PROFILE_SILPH_CARD_URL
-    )
-    return Profile.objects.get(name=ANOTHER_PROFILE_NAME)
+    create_another_user()
+    profile = Profile.objects.get(name=ANOTHER_USER)
+    profile.name = ANOTHER_PROFILE_NAME
+    profile.location = ANOTHER_PROFILE_LOCATION
+    profile.silph_card = ANOTHER_PROFILE_SILPH_CARD_URL
+    profile.save()
+    return profile
 
 
 def create_pokemon():
@@ -141,9 +141,9 @@ def create_pokedex(profile=None, entries=None):
         profile = create_profile()
     if not entries:
         entries = [create_pokedex_entry()]
-    pokedex = Pokedex.objects.create(
-        profile=profile,
-    )
+    pokedex = Pokedex.objects.get_or_create(
+        profile=profile
+    )[0]
     for entry in entries:
         pokedex.entries.add(entry)
     pokedex.save()

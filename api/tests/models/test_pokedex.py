@@ -14,9 +14,9 @@ class TestPokedexObject(TestCase):
         super(TestPokedexObject, self).setUp()
         self.profile = create_profile()
         self.pokedex_entry = create_pokedex_entry()
-        self.pokedex = Pokedex.objects.create(
-            profile=self.profile,
-        )
+        self.pokedex = Pokedex.objects.get_or_create(
+            profile=self.profile
+        )[0]
         self.pokedex.entries.add(self.pokedex_entry)
 
     def test_profile(self):
