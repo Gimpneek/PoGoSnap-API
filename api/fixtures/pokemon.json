@@ -1,0 +1,6418 @@
+[
+  {
+    "model": "api.pokemon",
+    "pk": 1,
+    "fields": {
+      "name": "Bulbasaur",
+      "dex_number": 1
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 2,
+    "fields": {
+      "name": "Ivysaur",
+      "dex_number": 2
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 3,
+    "fields": {
+      "name": "Venusaur",
+      "dex_number": 3
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 4,
+    "fields": {
+      "name": "Charmander",
+      "dex_number": 4
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 5,
+    "fields": {
+      "name": "Charmeleon",
+      "dex_number": 5
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 6,
+    "fields": {
+      "name": "Charizard",
+      "dex_number": 6
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 7,
+    "fields": {
+      "name": "Squirtle",
+      "dex_number": 7
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 8,
+    "fields": {
+      "name": "Wartortle",
+      "dex_number": 8
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 9,
+    "fields": {
+      "name": "Blastoise",
+      "dex_number": 9
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 10,
+    "fields": {
+      "name": "Caterpie",
+      "dex_number": 10
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 11,
+    "fields": {
+      "name": "Metapod",
+      "dex_number": 11
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 12,
+    "fields": {
+      "name": "Butterfree",
+      "dex_number": 12
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 13,
+    "fields": {
+      "name": "Weedle",
+      "dex_number": 13
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 14,
+    "fields": {
+      "name": "Kakuna",
+      "dex_number": 14
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 15,
+    "fields": {
+      "name": "Beedrill",
+      "dex_number": 15
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 16,
+    "fields": {
+      "name": "Pidgey",
+      "dex_number": 16
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 17,
+    "fields": {
+      "name": "Pidgeotto",
+      "dex_number": 17
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 18,
+    "fields": {
+      "name": "Pidgeot",
+      "dex_number": 18
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 19,
+    "fields": {
+      "name": "Rattata",
+      "dex_number": 19
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 20,
+    "fields": {
+      "name": "Raticate",
+      "dex_number": 20
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 21,
+    "fields": {
+      "name": "Spearow",
+      "dex_number": 21
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 22,
+    "fields": {
+      "name": "Fearow",
+      "dex_number": 22
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 23,
+    "fields": {
+      "name": "Ekans",
+      "dex_number": 23
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 24,
+    "fields": {
+      "name": "Arbok",
+      "dex_number": 24
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 25,
+    "fields": {
+      "name": "Pikachu",
+      "dex_number": 25
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 26,
+    "fields": {
+      "name": "Raichu",
+      "dex_number": 26
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 27,
+    "fields": {
+      "name": "Sandshrew",
+      "dex_number": 27
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 28,
+    "fields": {
+      "name": "Sandslash",
+      "dex_number": 28
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 29,
+    "fields": {
+      "name": "Nidoran♀",
+      "dex_number": 29
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 30,
+    "fields": {
+      "name": "Nidorina",
+      "dex_number": 30
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 31,
+    "fields": {
+      "name": "Nidoqueen",
+      "dex_number": 31
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 32,
+    "fields": {
+      "name": "Nidoran♂",
+      "dex_number": 32
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 33,
+    "fields": {
+      "name": "Nidorino",
+      "dex_number": 33
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 34,
+    "fields": {
+      "name": "Nidoking",
+      "dex_number": 34
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 35,
+    "fields": {
+      "name": "Clefairy",
+      "dex_number": 35
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 36,
+    "fields": {
+      "name": "Clefable",
+      "dex_number": 36
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 37,
+    "fields": {
+      "name": "Vulpix",
+      "dex_number": 37
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 38,
+    "fields": {
+      "name": "Ninetales",
+      "dex_number": 38
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 39,
+    "fields": {
+      "name": "Jigglypuff",
+      "dex_number": 39
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 40,
+    "fields": {
+      "name": "Wigglytuff",
+      "dex_number": 40
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 41,
+    "fields": {
+      "name": "Zubat",
+      "dex_number": 41
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 42,
+    "fields": {
+      "name": "Golbat",
+      "dex_number": 42
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 43,
+    "fields": {
+      "name": "Oddish",
+      "dex_number": 43
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 44,
+    "fields": {
+      "name": "Gloom",
+      "dex_number": 44
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 45,
+    "fields": {
+      "name": "Vileplume",
+      "dex_number": 45
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 46,
+    "fields": {
+      "name": "Paras",
+      "dex_number": 46
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 47,
+    "fields": {
+      "name": "Parasect",
+      "dex_number": 47
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 48,
+    "fields": {
+      "name": "Venonat",
+      "dex_number": 48
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 49,
+    "fields": {
+      "name": "Venomoth",
+      "dex_number": 49
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 50,
+    "fields": {
+      "name": "Diglett",
+      "dex_number": 50
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 51,
+    "fields": {
+      "name": "Dugtrio",
+      "dex_number": 51
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 52,
+    "fields": {
+      "name": "Meowth",
+      "dex_number": 52
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 53,
+    "fields": {
+      "name": "Persian",
+      "dex_number": 53
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 54,
+    "fields": {
+      "name": "Psyduck",
+      "dex_number": 54
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 55,
+    "fields": {
+      "name": "Golduck",
+      "dex_number": 55
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 56,
+    "fields": {
+      "name": "Mankey",
+      "dex_number": 56
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 57,
+    "fields": {
+      "name": "Primeape",
+      "dex_number": 57
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 58,
+    "fields": {
+      "name": "Growlithe",
+      "dex_number": 58
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 59,
+    "fields": {
+      "name": "Arcanine",
+      "dex_number": 59
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 60,
+    "fields": {
+      "name": "Poliwag",
+      "dex_number": 60
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 61,
+    "fields": {
+      "name": "Poliwhirl",
+      "dex_number": 61
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 62,
+    "fields": {
+      "name": "Poliwrath",
+      "dex_number": 62
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 63,
+    "fields": {
+      "name": "Abra",
+      "dex_number": 63
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 64,
+    "fields": {
+      "name": "Kadabra",
+      "dex_number": 64
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 65,
+    "fields": {
+      "name": "Alakazam",
+      "dex_number": 65
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 66,
+    "fields": {
+      "name": "Machop",
+      "dex_number": 66
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 67,
+    "fields": {
+      "name": "Machoke",
+      "dex_number": 67
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 68,
+    "fields": {
+      "name": "Machamp",
+      "dex_number": 68
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 69,
+    "fields": {
+      "name": "Bellsprout",
+      "dex_number": 69
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 70,
+    "fields": {
+      "name": "Weepinbell",
+      "dex_number": 70
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 71,
+    "fields": {
+      "name": "Victreebel",
+      "dex_number": 71
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 72,
+    "fields": {
+      "name": "Tentacool",
+      "dex_number": 72
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 73,
+    "fields": {
+      "name": "Tentacruel",
+      "dex_number": 73
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 74,
+    "fields": {
+      "name": "Geodude",
+      "dex_number": 74
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 75,
+    "fields": {
+      "name": "Graveler",
+      "dex_number": 75
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 76,
+    "fields": {
+      "name": "Golem",
+      "dex_number": 76
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 77,
+    "fields": {
+      "name": "Ponyta",
+      "dex_number": 77
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 78,
+    "fields": {
+      "name": "Rapidash",
+      "dex_number": 78
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 79,
+    "fields": {
+      "name": "Slowpoke",
+      "dex_number": 79
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 80,
+    "fields": {
+      "name": "Slowbro",
+      "dex_number": 80
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 81,
+    "fields": {
+      "name": "Magnemite",
+      "dex_number": 81
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 82,
+    "fields": {
+      "name": "Magneton",
+      "dex_number": 82
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 83,
+    "fields": {
+      "name": "Farfetch’d",
+      "dex_number": 83
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 84,
+    "fields": {
+      "name": "Doduo",
+      "dex_number": 84
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 85,
+    "fields": {
+      "name": "Dodrio",
+      "dex_number": 85
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 86,
+    "fields": {
+      "name": "Seel",
+      "dex_number": 86
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 87,
+    "fields": {
+      "name": "Dewgong",
+      "dex_number": 87
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 88,
+    "fields": {
+      "name": "Grimer",
+      "dex_number": 88
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 89,
+    "fields": {
+      "name": "Muk",
+      "dex_number": 89
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 90,
+    "fields": {
+      "name": "Shellder",
+      "dex_number": 90
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 91,
+    "fields": {
+      "name": "Cloyster",
+      "dex_number": 91
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 92,
+    "fields": {
+      "name": "Gastly",
+      "dex_number": 92
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 93,
+    "fields": {
+      "name": "Haunter",
+      "dex_number": 93
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 94,
+    "fields": {
+      "name": "Gengar",
+      "dex_number": 94
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 95,
+    "fields": {
+      "name": "Onix",
+      "dex_number": 95
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 96,
+    "fields": {
+      "name": "Drowzee",
+      "dex_number": 96
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 97,
+    "fields": {
+      "name": "Hypno",
+      "dex_number": 97
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 98,
+    "fields": {
+      "name": "Krabby",
+      "dex_number": 98
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 99,
+    "fields": {
+      "name": "Kingler",
+      "dex_number": 99
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 100,
+    "fields": {
+      "name": "Voltorb",
+      "dex_number": 100
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 101,
+    "fields": {
+      "name": "Electrode",
+      "dex_number": 101
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 102,
+    "fields": {
+      "name": "Exeggcute",
+      "dex_number": 102
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 103,
+    "fields": {
+      "name": "Exeggutor",
+      "dex_number": 103
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 104,
+    "fields": {
+      "name": "Cubone",
+      "dex_number": 104
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 105,
+    "fields": {
+      "name": "Marowak",
+      "dex_number": 105
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 106,
+    "fields": {
+      "name": "Hitmonlee",
+      "dex_number": 106
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 107,
+    "fields": {
+      "name": "Hitmonchan",
+      "dex_number": 107
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 108,
+    "fields": {
+      "name": "Lickitung",
+      "dex_number": 108
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 109,
+    "fields": {
+      "name": "Koffing",
+      "dex_number": 109
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 110,
+    "fields": {
+      "name": "Weezing",
+      "dex_number": 110
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 111,
+    "fields": {
+      "name": "Rhyhorn",
+      "dex_number": 111
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 112,
+    "fields": {
+      "name": "Rhydon",
+      "dex_number": 112
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 113,
+    "fields": {
+      "name": "Chansey",
+      "dex_number": 113
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 114,
+    "fields": {
+      "name": "Tangela",
+      "dex_number": 114
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 115,
+    "fields": {
+      "name": "Kangaskhan",
+      "dex_number": 115
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 116,
+    "fields": {
+      "name": "Horsea",
+      "dex_number": 116
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 117,
+    "fields": {
+      "name": "Seadra",
+      "dex_number": 117
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 118,
+    "fields": {
+      "name": "Goldeen",
+      "dex_number": 118
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 119,
+    "fields": {
+      "name": "Seaking",
+      "dex_number": 119
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 120,
+    "fields": {
+      "name": "Staryu",
+      "dex_number": 120
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 121,
+    "fields": {
+      "name": "Starmie",
+      "dex_number": 121
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 122,
+    "fields": {
+      "name": "Mr. Mime",
+      "dex_number": 122
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 123,
+    "fields": {
+      "name": "Scyther",
+      "dex_number": 123
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 124,
+    "fields": {
+      "name": "Jynx",
+      "dex_number": 124
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 125,
+    "fields": {
+      "name": "Electabuzz",
+      "dex_number": 125
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 126,
+    "fields": {
+      "name": "Magmar",
+      "dex_number": 126
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 127,
+    "fields": {
+      "name": "Pinsir",
+      "dex_number": 127
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 128,
+    "fields": {
+      "name": "Tauros",
+      "dex_number": 128
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 129,
+    "fields": {
+      "name": "Magikarp",
+      "dex_number": 129
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 130,
+    "fields": {
+      "name": "Gyarados",
+      "dex_number": 130
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 131,
+    "fields": {
+      "name": "Lapras",
+      "dex_number": 131
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 132,
+    "fields": {
+      "name": "Ditto",
+      "dex_number": 132
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 133,
+    "fields": {
+      "name": "Eevee",
+      "dex_number": 133
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 134,
+    "fields": {
+      "name": "Vaporeon",
+      "dex_number": 134
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 135,
+    "fields": {
+      "name": "Jolteon",
+      "dex_number": 135
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 136,
+    "fields": {
+      "name": "Flareon",
+      "dex_number": 136
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 137,
+    "fields": {
+      "name": "Porygon",
+      "dex_number": 137
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 138,
+    "fields": {
+      "name": "Omanyte",
+      "dex_number": 138
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 139,
+    "fields": {
+      "name": "Omastar",
+      "dex_number": 139
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 140,
+    "fields": {
+      "name": "Kabuto",
+      "dex_number": 140
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 141,
+    "fields": {
+      "name": "Kabutops",
+      "dex_number": 141
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 142,
+    "fields": {
+      "name": "Aerodactyl",
+      "dex_number": 142
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 143,
+    "fields": {
+      "name": "Snorlax",
+      "dex_number": 143
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 144,
+    "fields": {
+      "name": "Articuno",
+      "dex_number": 144
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 145,
+    "fields": {
+      "name": "Zapdos",
+      "dex_number": 145
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 146,
+    "fields": {
+      "name": "Moltres",
+      "dex_number": 146
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 147,
+    "fields": {
+      "name": "Dratini",
+      "dex_number": 147
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 148,
+    "fields": {
+      "name": "Dragonair",
+      "dex_number": 148
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 149,
+    "fields": {
+      "name": "Dragonite",
+      "dex_number": 149
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 150,
+    "fields": {
+      "name": "Mewtwo",
+      "dex_number": 150
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 151,
+    "fields": {
+      "name": "Mew",
+      "dex_number": 151
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 152,
+    "fields": {
+      "name": "Chikorita",
+      "dex_number": 152
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 153,
+    "fields": {
+      "name": "Bayleef",
+      "dex_number": 153
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 154,
+    "fields": {
+      "name": "Meganium",
+      "dex_number": 154
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 155,
+    "fields": {
+      "name": "Cyndaquil",
+      "dex_number": 155
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 156,
+    "fields": {
+      "name": "Quilava",
+      "dex_number": 156
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 157,
+    "fields": {
+      "name": "Typhlosion",
+      "dex_number": 157
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 158,
+    "fields": {
+      "name": "Totodile",
+      "dex_number": 158
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 159,
+    "fields": {
+      "name": "Croconaw",
+      "dex_number": 159
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 160,
+    "fields": {
+      "name": "Feraligatr",
+      "dex_number": 160
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 161,
+    "fields": {
+      "name": "Sentret",
+      "dex_number": 161
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 162,
+    "fields": {
+      "name": "Furret",
+      "dex_number": 162
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 163,
+    "fields": {
+      "name": "Hoothoot",
+      "dex_number": 163
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 164,
+    "fields": {
+      "name": "Noctowl",
+      "dex_number": 164
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 165,
+    "fields": {
+      "name": "Ledyba",
+      "dex_number": 165
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 166,
+    "fields": {
+      "name": "Ledian",
+      "dex_number": 166
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 167,
+    "fields": {
+      "name": "Spinarak",
+      "dex_number": 167
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 168,
+    "fields": {
+      "name": "Ariados",
+      "dex_number": 168
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 169,
+    "fields": {
+      "name": "Crobat",
+      "dex_number": 169
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 170,
+    "fields": {
+      "name": "Chinchou",
+      "dex_number": 170
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 171,
+    "fields": {
+      "name": "Lanturn",
+      "dex_number": 171
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 172,
+    "fields": {
+      "name": "Pichu",
+      "dex_number": 172
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 173,
+    "fields": {
+      "name": "Cleffa",
+      "dex_number": 173
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 174,
+    "fields": {
+      "name": "Igglybuff",
+      "dex_number": 174
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 175,
+    "fields": {
+      "name": "Togepi",
+      "dex_number": 175
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 176,
+    "fields": {
+      "name": "Togetic",
+      "dex_number": 176
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 177,
+    "fields": {
+      "name": "Natu",
+      "dex_number": 177
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 178,
+    "fields": {
+      "name": "Xatu",
+      "dex_number": 178
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 179,
+    "fields": {
+      "name": "Mareep",
+      "dex_number": 179
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 180,
+    "fields": {
+      "name": "Flaaffy",
+      "dex_number": 180
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 181,
+    "fields": {
+      "name": "Ampharos",
+      "dex_number": 181
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 182,
+    "fields": {
+      "name": "Bellossom",
+      "dex_number": 182
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 183,
+    "fields": {
+      "name": "Marill",
+      "dex_number": 183
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 184,
+    "fields": {
+      "name": "Azumarill",
+      "dex_number": 184
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 185,
+    "fields": {
+      "name": "Sudowoodo",
+      "dex_number": 185
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 186,
+    "fields": {
+      "name": "Politoed",
+      "dex_number": 186
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 187,
+    "fields": {
+      "name": "Hoppip",
+      "dex_number": 187
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 188,
+    "fields": {
+      "name": "Skiploom",
+      "dex_number": 188
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 189,
+    "fields": {
+      "name": "Jumpluff",
+      "dex_number": 189
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 190,
+    "fields": {
+      "name": "Aipom",
+      "dex_number": 190
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 191,
+    "fields": {
+      "name": "Sunkern",
+      "dex_number": 191
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 192,
+    "fields": {
+      "name": "Sunflora",
+      "dex_number": 192
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 193,
+    "fields": {
+      "name": "Yanma",
+      "dex_number": 193
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 194,
+    "fields": {
+      "name": "Wooper",
+      "dex_number": 194
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 195,
+    "fields": {
+      "name": "Quagsire",
+      "dex_number": 195
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 196,
+    "fields": {
+      "name": "Espeon",
+      "dex_number": 196
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 197,
+    "fields": {
+      "name": "Umbreon",
+      "dex_number": 197
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 198,
+    "fields": {
+      "name": "Murkrow",
+      "dex_number": 198
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 199,
+    "fields": {
+      "name": "Slowking",
+      "dex_number": 199
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 200,
+    "fields": {
+      "name": "Misdreavus",
+      "dex_number": 200
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 201,
+    "fields": {
+      "name": "Unown",
+      "dex_number": 201
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 202,
+    "fields": {
+      "name": "Wobbuffet",
+      "dex_number": 202
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 203,
+    "fields": {
+      "name": "Girafarig",
+      "dex_number": 203
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 204,
+    "fields": {
+      "name": "Pineco",
+      "dex_number": 204
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 205,
+    "fields": {
+      "name": "Forretress",
+      "dex_number": 205
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 206,
+    "fields": {
+      "name": "Dunsparce",
+      "dex_number": 206
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 207,
+    "fields": {
+      "name": "Gligar",
+      "dex_number": 207
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 208,
+    "fields": {
+      "name": "Steelix",
+      "dex_number": 208
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 209,
+    "fields": {
+      "name": "Snubbull",
+      "dex_number": 209
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 210,
+    "fields": {
+      "name": "Granbull",
+      "dex_number": 210
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 211,
+    "fields": {
+      "name": "Qwilfish",
+      "dex_number": 211
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 212,
+    "fields": {
+      "name": "Scizor",
+      "dex_number": 212
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 213,
+    "fields": {
+      "name": "Shuckle",
+      "dex_number": 213
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 214,
+    "fields": {
+      "name": "Heracross",
+      "dex_number": 214
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 215,
+    "fields": {
+      "name": "Sneasel",
+      "dex_number": 215
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 216,
+    "fields": {
+      "name": "Teddiursa",
+      "dex_number": 216
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 217,
+    "fields": {
+      "name": "Ursaring",
+      "dex_number": 217
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 218,
+    "fields": {
+      "name": "Slugma",
+      "dex_number": 218
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 219,
+    "fields": {
+      "name": "Magcargo",
+      "dex_number": 219
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 220,
+    "fields": {
+      "name": "Swinub",
+      "dex_number": 220
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 221,
+    "fields": {
+      "name": "Piloswine",
+      "dex_number": 221
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 222,
+    "fields": {
+      "name": "Corsola",
+      "dex_number": 222
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 223,
+    "fields": {
+      "name": "Remoraid",
+      "dex_number": 223
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 224,
+    "fields": {
+      "name": "Octillery",
+      "dex_number": 224
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 225,
+    "fields": {
+      "name": "Delibird",
+      "dex_number": 225
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 226,
+    "fields": {
+      "name": "Mantine",
+      "dex_number": 226
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 227,
+    "fields": {
+      "name": "Skarmory",
+      "dex_number": 227
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 228,
+    "fields": {
+      "name": "Houndour",
+      "dex_number": 228
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 229,
+    "fields": {
+      "name": "Houndoom",
+      "dex_number": 229
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 230,
+    "fields": {
+      "name": "Kingdra",
+      "dex_number": 230
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 231,
+    "fields": {
+      "name": "Phanpy",
+      "dex_number": 231
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 232,
+    "fields": {
+      "name": "Donphan",
+      "dex_number": 232
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 233,
+    "fields": {
+      "name": "Porygon2",
+      "dex_number": 233
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 234,
+    "fields": {
+      "name": "Stantler",
+      "dex_number": 234
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 235,
+    "fields": {
+      "name": "Smeargle",
+      "dex_number": 235
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 236,
+    "fields": {
+      "name": "Tyrogue",
+      "dex_number": 236
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 237,
+    "fields": {
+      "name": "Hitmontop",
+      "dex_number": 237
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 238,
+    "fields": {
+      "name": "Smoochum",
+      "dex_number": 238
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 239,
+    "fields": {
+      "name": "Elekid",
+      "dex_number": 239
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 240,
+    "fields": {
+      "name": "Magby",
+      "dex_number": 240
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 241,
+    "fields": {
+      "name": "Miltank",
+      "dex_number": 241
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 242,
+    "fields": {
+      "name": "Blissey",
+      "dex_number": 242
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 243,
+    "fields": {
+      "name": "Raikou",
+      "dex_number": 243
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 244,
+    "fields": {
+      "name": "Entei",
+      "dex_number": 244
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 245,
+    "fields": {
+      "name": "Suicune",
+      "dex_number": 245
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 246,
+    "fields": {
+      "name": "Larvitar",
+      "dex_number": 246
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 247,
+    "fields": {
+      "name": "Pupitar",
+      "dex_number": 247
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 248,
+    "fields": {
+      "name": "Tyranitar",
+      "dex_number": 248
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 249,
+    "fields": {
+      "name": "Lugia",
+      "dex_number": 249
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 250,
+    "fields": {
+      "name": "Ho-Oh",
+      "dex_number": 250
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 251,
+    "fields": {
+      "name": "Celebi",
+      "dex_number": 251
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 252,
+    "fields": {
+      "name": "Treecko",
+      "dex_number": 252
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 253,
+    "fields": {
+      "name": "Grovyle",
+      "dex_number": 253
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 254,
+    "fields": {
+      "name": "Sceptile",
+      "dex_number": 254
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 255,
+    "fields": {
+      "name": "Torchic",
+      "dex_number": 255
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 256,
+    "fields": {
+      "name": "Combusken",
+      "dex_number": 256
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 257,
+    "fields": {
+      "name": "Blaziken",
+      "dex_number": 257
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 258,
+    "fields": {
+      "name": "Mudkip",
+      "dex_number": 258
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 259,
+    "fields": {
+      "name": "Marshtomp",
+      "dex_number": 259
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 260,
+    "fields": {
+      "name": "Swampert",
+      "dex_number": 260
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 261,
+    "fields": {
+      "name": "Poochyena",
+      "dex_number": 261
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 262,
+    "fields": {
+      "name": "Mightyena",
+      "dex_number": 262
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 263,
+    "fields": {
+      "name": "Zigzagoon",
+      "dex_number": 263
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 264,
+    "fields": {
+      "name": "Linoone",
+      "dex_number": 264
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 265,
+    "fields": {
+      "name": "Wurmple",
+      "dex_number": 265
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 266,
+    "fields": {
+      "name": "Silcoon",
+      "dex_number": 266
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 267,
+    "fields": {
+      "name": "Beautifly",
+      "dex_number": 267
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 268,
+    "fields": {
+      "name": "Cascoon",
+      "dex_number": 268
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 269,
+    "fields": {
+      "name": "Dustox",
+      "dex_number": 269
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 270,
+    "fields": {
+      "name": "Lotad",
+      "dex_number": 270
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 271,
+    "fields": {
+      "name": "Lombre",
+      "dex_number": 271
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 272,
+    "fields": {
+      "name": "Ludicolo",
+      "dex_number": 272
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 273,
+    "fields": {
+      "name": "Seedot",
+      "dex_number": 273
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 274,
+    "fields": {
+      "name": "Nuzleaf",
+      "dex_number": 274
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 275,
+    "fields": {
+      "name": "Shiftry",
+      "dex_number": 275
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 276,
+    "fields": {
+      "name": "Taillow",
+      "dex_number": 276
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 277,
+    "fields": {
+      "name": "Swellow",
+      "dex_number": 277
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 278,
+    "fields": {
+      "name": "Wingull",
+      "dex_number": 278
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 279,
+    "fields": {
+      "name": "Pelipper",
+      "dex_number": 279
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 280,
+    "fields": {
+      "name": "Ralts",
+      "dex_number": 280
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 281,
+    "fields": {
+      "name": "Kirlia",
+      "dex_number": 281
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 282,
+    "fields": {
+      "name": "Gardevoir",
+      "dex_number": 282
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 283,
+    "fields": {
+      "name": "Surskit",
+      "dex_number": 283
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 284,
+    "fields": {
+      "name": "Masquerain",
+      "dex_number": 284
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 285,
+    "fields": {
+      "name": "Shroomish",
+      "dex_number": 285
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 286,
+    "fields": {
+      "name": "Breloom",
+      "dex_number": 286
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 287,
+    "fields": {
+      "name": "Slakoth",
+      "dex_number": 287
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 288,
+    "fields": {
+      "name": "Vigoroth",
+      "dex_number": 288
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 289,
+    "fields": {
+      "name": "Slaking",
+      "dex_number": 289
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 290,
+    "fields": {
+      "name": "Nincada",
+      "dex_number": 290
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 291,
+    "fields": {
+      "name": "Ninjask",
+      "dex_number": 291
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 292,
+    "fields": {
+      "name": "Shedinja",
+      "dex_number": 292
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 293,
+    "fields": {
+      "name": "Whismur",
+      "dex_number": 293
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 294,
+    "fields": {
+      "name": "Loudred",
+      "dex_number": 294
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 295,
+    "fields": {
+      "name": "Exploud",
+      "dex_number": 295
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 296,
+    "fields": {
+      "name": "Makuhita",
+      "dex_number": 296
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 297,
+    "fields": {
+      "name": "Hariyama",
+      "dex_number": 297
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 298,
+    "fields": {
+      "name": "Azurill",
+      "dex_number": 298
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 299,
+    "fields": {
+      "name": "Nosepass",
+      "dex_number": 299
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 300,
+    "fields": {
+      "name": "Skitty",
+      "dex_number": 300
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 301,
+    "fields": {
+      "name": "Delcatty",
+      "dex_number": 301
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 302,
+    "fields": {
+      "name": "Sableye",
+      "dex_number": 302
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 303,
+    "fields": {
+      "name": "Mawile",
+      "dex_number": 303
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 304,
+    "fields": {
+      "name": "Aron",
+      "dex_number": 304
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 305,
+    "fields": {
+      "name": "Lairon",
+      "dex_number": 305
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 306,
+    "fields": {
+      "name": "Aggron",
+      "dex_number": 306
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 307,
+    "fields": {
+      "name": "Meditite",
+      "dex_number": 307
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 308,
+    "fields": {
+      "name": "Medicham",
+      "dex_number": 308
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 309,
+    "fields": {
+      "name": "Electrike",
+      "dex_number": 309
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 310,
+    "fields": {
+      "name": "Manectric",
+      "dex_number": 310
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 311,
+    "fields": {
+      "name": "Plusle",
+      "dex_number": 311
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 312,
+    "fields": {
+      "name": "Minun",
+      "dex_number": 312
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 313,
+    "fields": {
+      "name": "Volbeat",
+      "dex_number": 313
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 314,
+    "fields": {
+      "name": "Illumise",
+      "dex_number": 314
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 315,
+    "fields": {
+      "name": "Roselia",
+      "dex_number": 315
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 316,
+    "fields": {
+      "name": "Gulpin",
+      "dex_number": 316
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 317,
+    "fields": {
+      "name": "Swalot",
+      "dex_number": 317
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 318,
+    "fields": {
+      "name": "Carvanha",
+      "dex_number": 318
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 319,
+    "fields": {
+      "name": "Sharpedo",
+      "dex_number": 319
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 320,
+    "fields": {
+      "name": "Wailmer",
+      "dex_number": 320
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 321,
+    "fields": {
+      "name": "Wailord",
+      "dex_number": 321
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 322,
+    "fields": {
+      "name": "Numel",
+      "dex_number": 322
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 323,
+    "fields": {
+      "name": "Camerupt",
+      "dex_number": 323
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 324,
+    "fields": {
+      "name": "Torkoal",
+      "dex_number": 324
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 325,
+    "fields": {
+      "name": "Spoink",
+      "dex_number": 325
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 326,
+    "fields": {
+      "name": "Grumpig",
+      "dex_number": 326
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 327,
+    "fields": {
+      "name": "Spinda",
+      "dex_number": 327
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 328,
+    "fields": {
+      "name": "Trapinch",
+      "dex_number": 328
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 329,
+    "fields": {
+      "name": "Vibrava",
+      "dex_number": 329
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 330,
+    "fields": {
+      "name": "Flygon",
+      "dex_number": 330
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 331,
+    "fields": {
+      "name": "Cacnea",
+      "dex_number": 331
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 332,
+    "fields": {
+      "name": "Cacturne",
+      "dex_number": 332
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 333,
+    "fields": {
+      "name": "Swablu",
+      "dex_number": 333
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 334,
+    "fields": {
+      "name": "Altaria",
+      "dex_number": 334
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 335,
+    "fields": {
+      "name": "Zangoose",
+      "dex_number": 335
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 336,
+    "fields": {
+      "name": "Seviper",
+      "dex_number": 336
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 337,
+    "fields": {
+      "name": "Lunatone",
+      "dex_number": 337
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 338,
+    "fields": {
+      "name": "Solrock",
+      "dex_number": 338
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 339,
+    "fields": {
+      "name": "Barboach",
+      "dex_number": 339
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 340,
+    "fields": {
+      "name": "Whiscash",
+      "dex_number": 340
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 341,
+    "fields": {
+      "name": "Corphish",
+      "dex_number": 341
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 342,
+    "fields": {
+      "name": "Crawdaunt",
+      "dex_number": 342
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 343,
+    "fields": {
+      "name": "Baltoy",
+      "dex_number": 343
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 344,
+    "fields": {
+      "name": "Claydol",
+      "dex_number": 344
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 345,
+    "fields": {
+      "name": "Lileep",
+      "dex_number": 345
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 346,
+    "fields": {
+      "name": "Cradily",
+      "dex_number": 346
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 347,
+    "fields": {
+      "name": "Anorith",
+      "dex_number": 347
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 348,
+    "fields": {
+      "name": "Armaldo",
+      "dex_number": 348
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 349,
+    "fields": {
+      "name": "Feebas",
+      "dex_number": 349
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 350,
+    "fields": {
+      "name": "Milotic",
+      "dex_number": 350
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 351,
+    "fields": {
+      "name": "Castform",
+      "dex_number": 351
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 352,
+    "fields": {
+      "name": "Kecleon",
+      "dex_number": 352
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 353,
+    "fields": {
+      "name": "Shuppet",
+      "dex_number": 353
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 354,
+    "fields": {
+      "name": "Banette",
+      "dex_number": 354
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 355,
+    "fields": {
+      "name": "Duskull",
+      "dex_number": 355
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 356,
+    "fields": {
+      "name": "Dusclops",
+      "dex_number": 356
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 357,
+    "fields": {
+      "name": "Tropius",
+      "dex_number": 357
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 358,
+    "fields": {
+      "name": "Chimecho",
+      "dex_number": 358
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 359,
+    "fields": {
+      "name": "Absol",
+      "dex_number": 359
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 360,
+    "fields": {
+      "name": "Wynaut",
+      "dex_number": 360
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 361,
+    "fields": {
+      "name": "Snorunt",
+      "dex_number": 361
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 362,
+    "fields": {
+      "name": "Glalie",
+      "dex_number": 362
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 363,
+    "fields": {
+      "name": "Spheal",
+      "dex_number": 363
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 364,
+    "fields": {
+      "name": "Sealeo",
+      "dex_number": 364
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 365,
+    "fields": {
+      "name": "Walrein",
+      "dex_number": 365
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 366,
+    "fields": {
+      "name": "Clamperl",
+      "dex_number": 366
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 367,
+    "fields": {
+      "name": "Huntail",
+      "dex_number": 367
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 368,
+    "fields": {
+      "name": "Gorebyss",
+      "dex_number": 368
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 369,
+    "fields": {
+      "name": "Relicanth",
+      "dex_number": 369
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 370,
+    "fields": {
+      "name": "Luvdisc",
+      "dex_number": 370
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 371,
+    "fields": {
+      "name": "Bagon",
+      "dex_number": 371
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 372,
+    "fields": {
+      "name": "Shelgon",
+      "dex_number": 372
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 373,
+    "fields": {
+      "name": "Salamence",
+      "dex_number": 373
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 374,
+    "fields": {
+      "name": "Beldum",
+      "dex_number": 374
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 375,
+    "fields": {
+      "name": "Metang",
+      "dex_number": 375
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 376,
+    "fields": {
+      "name": "Metagross",
+      "dex_number": 376
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 377,
+    "fields": {
+      "name": "Regirock",
+      "dex_number": 377
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 378,
+    "fields": {
+      "name": "Regice",
+      "dex_number": 378
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 379,
+    "fields": {
+      "name": "Registeel",
+      "dex_number": 379
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 380,
+    "fields": {
+      "name": "Latias",
+      "dex_number": 380
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 381,
+    "fields": {
+      "name": "Latios",
+      "dex_number": 381
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 382,
+    "fields": {
+      "name": "Kyogre",
+      "dex_number": 382
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 383,
+    "fields": {
+      "name": "Groudon",
+      "dex_number": 383
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 384,
+    "fields": {
+      "name": "Rayquaza",
+      "dex_number": 384
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 385,
+    "fields": {
+      "name": "Jirachi",
+      "dex_number": 385
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 386,
+    "fields": {
+      "name": "Deoxys",
+      "dex_number": 386
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 387,
+    "fields": {
+      "name": "Turtwig",
+      "dex_number": 387
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 388,
+    "fields": {
+      "name": "Grotle",
+      "dex_number": 388
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 389,
+    "fields": {
+      "name": "Torterra",
+      "dex_number": 389
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 390,
+    "fields": {
+      "name": "Chimchar",
+      "dex_number": 390
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 391,
+    "fields": {
+      "name": "Monferno",
+      "dex_number": 391
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 392,
+    "fields": {
+      "name": "Infernape",
+      "dex_number": 392
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 393,
+    "fields": {
+      "name": "Piplup",
+      "dex_number": 393
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 394,
+    "fields": {
+      "name": "Prinplup",
+      "dex_number": 394
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 395,
+    "fields": {
+      "name": "Empoleon",
+      "dex_number": 395
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 396,
+    "fields": {
+      "name": "Starly",
+      "dex_number": 396
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 397,
+    "fields": {
+      "name": "Staravia",
+      "dex_number": 397
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 398,
+    "fields": {
+      "name": "Staraptor",
+      "dex_number": 398
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 399,
+    "fields": {
+      "name": "Bidoof",
+      "dex_number": 399
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 400,
+    "fields": {
+      "name": "Bibarel",
+      "dex_number": 400
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 401,
+    "fields": {
+      "name": "Kricketot",
+      "dex_number": 401
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 402,
+    "fields": {
+      "name": "Kricketune",
+      "dex_number": 402
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 403,
+    "fields": {
+      "name": "Shinx",
+      "dex_number": 403
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 404,
+    "fields": {
+      "name": "Luxio",
+      "dex_number": 404
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 405,
+    "fields": {
+      "name": "Luxray",
+      "dex_number": 405
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 406,
+    "fields": {
+      "name": "Budew",
+      "dex_number": 406
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 407,
+    "fields": {
+      "name": "Roserade",
+      "dex_number": 407
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 408,
+    "fields": {
+      "name": "Cranidos",
+      "dex_number": 408
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 409,
+    "fields": {
+      "name": "Rampardos",
+      "dex_number": 409
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 410,
+    "fields": {
+      "name": "Shieldon",
+      "dex_number": 410
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 411,
+    "fields": {
+      "name": "Bastiodon",
+      "dex_number": 411
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 412,
+    "fields": {
+      "name": "Burmy",
+      "dex_number": 412
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 413,
+    "fields": {
+      "name": "Wormadam",
+      "dex_number": 413
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 414,
+    "fields": {
+      "name": "Mothim",
+      "dex_number": 414
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 415,
+    "fields": {
+      "name": "Combee",
+      "dex_number": 415
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 416,
+    "fields": {
+      "name": "Vespiquen",
+      "dex_number": 416
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 417,
+    "fields": {
+      "name": "Pachirisu",
+      "dex_number": 417
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 418,
+    "fields": {
+      "name": "Buizel",
+      "dex_number": 418
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 419,
+    "fields": {
+      "name": "Floatzel",
+      "dex_number": 419
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 420,
+    "fields": {
+      "name": "Cherubi",
+      "dex_number": 420
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 421,
+    "fields": {
+      "name": "Cherrim",
+      "dex_number": 421
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 422,
+    "fields": {
+      "name": "Shellos",
+      "dex_number": 422
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 423,
+    "fields": {
+      "name": "Gastrodon",
+      "dex_number": 423
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 424,
+    "fields": {
+      "name": "Ambipom",
+      "dex_number": 424
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 425,
+    "fields": {
+      "name": "Drifloon",
+      "dex_number": 425
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 426,
+    "fields": {
+      "name": "Drifblim",
+      "dex_number": 426
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 427,
+    "fields": {
+      "name": "Buneary",
+      "dex_number": 427
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 428,
+    "fields": {
+      "name": "Lopunny",
+      "dex_number": 428
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 429,
+    "fields": {
+      "name": "Mismagius",
+      "dex_number": 429
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 430,
+    "fields": {
+      "name": "Honchkrow",
+      "dex_number": 430
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 431,
+    "fields": {
+      "name": "Glameow",
+      "dex_number": 431
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 432,
+    "fields": {
+      "name": "Purugly",
+      "dex_number": 432
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 433,
+    "fields": {
+      "name": "Chingling",
+      "dex_number": 433
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 434,
+    "fields": {
+      "name": "Stunky",
+      "dex_number": 434
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 435,
+    "fields": {
+      "name": "Skuntank",
+      "dex_number": 435
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 436,
+    "fields": {
+      "name": "Bronzor",
+      "dex_number": 436
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 437,
+    "fields": {
+      "name": "Bronzong",
+      "dex_number": 437
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 438,
+    "fields": {
+      "name": "Bonsly",
+      "dex_number": 438
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 439,
+    "fields": {
+      "name": "Mime Jr.",
+      "dex_number": 439
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 440,
+    "fields": {
+      "name": "Happiny",
+      "dex_number": 440
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 441,
+    "fields": {
+      "name": "Chatot",
+      "dex_number": 441
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 442,
+    "fields": {
+      "name": "Spiritomb",
+      "dex_number": 442
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 443,
+    "fields": {
+      "name": "Gible",
+      "dex_number": 443
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 444,
+    "fields": {
+      "name": "Gabite",
+      "dex_number": 444
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 445,
+    "fields": {
+      "name": "Garchomp",
+      "dex_number": 445
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 446,
+    "fields": {
+      "name": "Munchlax",
+      "dex_number": 446
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 447,
+    "fields": {
+      "name": "Riolu",
+      "dex_number": 447
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 448,
+    "fields": {
+      "name": "Lucario",
+      "dex_number": 448
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 449,
+    "fields": {
+      "name": "Hippopotas",
+      "dex_number": 449
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 450,
+    "fields": {
+      "name": "Hippowdon",
+      "dex_number": 450
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 451,
+    "fields": {
+      "name": "Skorupi",
+      "dex_number": 451
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 452,
+    "fields": {
+      "name": "Drapion",
+      "dex_number": 452
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 453,
+    "fields": {
+      "name": "Croagunk",
+      "dex_number": 453
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 454,
+    "fields": {
+      "name": "Toxicroak",
+      "dex_number": 454
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 455,
+    "fields": {
+      "name": "Carnivine",
+      "dex_number": 455
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 456,
+    "fields": {
+      "name": "Finneon",
+      "dex_number": 456
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 457,
+    "fields": {
+      "name": "Lumineon",
+      "dex_number": 457
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 458,
+    "fields": {
+      "name": "Mantyke",
+      "dex_number": 458
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 459,
+    "fields": {
+      "name": "Snover",
+      "dex_number": 459
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 460,
+    "fields": {
+      "name": "Abomasnow",
+      "dex_number": 460
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 461,
+    "fields": {
+      "name": "Weavile",
+      "dex_number": 461
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 462,
+    "fields": {
+      "name": "Magnezone",
+      "dex_number": 462
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 463,
+    "fields": {
+      "name": "Lickilicky",
+      "dex_number": 463
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 464,
+    "fields": {
+      "name": "Rhyperior",
+      "dex_number": 464
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 465,
+    "fields": {
+      "name": "Tangrowth",
+      "dex_number": 465
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 466,
+    "fields": {
+      "name": "Electivire",
+      "dex_number": 466
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 467,
+    "fields": {
+      "name": "Magmortar",
+      "dex_number": 467
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 468,
+    "fields": {
+      "name": "Togekiss",
+      "dex_number": 468
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 469,
+    "fields": {
+      "name": "Yanmega",
+      "dex_number": 469
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 470,
+    "fields": {
+      "name": "Leafeon",
+      "dex_number": 470
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 471,
+    "fields": {
+      "name": "Glaceon",
+      "dex_number": 471
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 472,
+    "fields": {
+      "name": "Gliscor",
+      "dex_number": 472
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 473,
+    "fields": {
+      "name": "Mamoswine",
+      "dex_number": 473
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 474,
+    "fields": {
+      "name": "Porygon-Z",
+      "dex_number": 474
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 475,
+    "fields": {
+      "name": "Gallade",
+      "dex_number": 475
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 476,
+    "fields": {
+      "name": "Probopass",
+      "dex_number": 476
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 477,
+    "fields": {
+      "name": "Dusknoir",
+      "dex_number": 477
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 478,
+    "fields": {
+      "name": "Froslass",
+      "dex_number": 478
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 479,
+    "fields": {
+      "name": "Rotom",
+      "dex_number": 479
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 480,
+    "fields": {
+      "name": "Uxie",
+      "dex_number": 480
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 481,
+    "fields": {
+      "name": "Mesprit",
+      "dex_number": 481
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 482,
+    "fields": {
+      "name": "Azelf",
+      "dex_number": 482
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 483,
+    "fields": {
+      "name": "Dialga",
+      "dex_number": 483
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 484,
+    "fields": {
+      "name": "Palkia",
+      "dex_number": 484
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 485,
+    "fields": {
+      "name": "Heatran",
+      "dex_number": 485
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 486,
+    "fields": {
+      "name": "Regigigas",
+      "dex_number": 486
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 487,
+    "fields": {
+      "name": "Giratina",
+      "dex_number": 487
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 488,
+    "fields": {
+      "name": "Cresselia",
+      "dex_number": 488
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 489,
+    "fields": {
+      "name": "Phione",
+      "dex_number": 489
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 490,
+    "fields": {
+      "name": "Manaphy",
+      "dex_number": 490
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 491,
+    "fields": {
+      "name": "Darkrai",
+      "dex_number": 491
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 492,
+    "fields": {
+      "name": "Shaymin",
+      "dex_number": 492
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 493,
+    "fields": {
+      "name": "Arceus",
+      "dex_number": 493
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 494,
+    "fields": {
+      "name": "Victini",
+      "dex_number": 494
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 495,
+    "fields": {
+      "name": "Snivy",
+      "dex_number": 495
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 496,
+    "fields": {
+      "name": "Servine",
+      "dex_number": 496
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 497,
+    "fields": {
+      "name": "Serperior",
+      "dex_number": 497
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 498,
+    "fields": {
+      "name": "Tepig",
+      "dex_number": 498
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 499,
+    "fields": {
+      "name": "Pignite",
+      "dex_number": 499
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 500,
+    "fields": {
+      "name": "Emboar",
+      "dex_number": 500
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 501,
+    "fields": {
+      "name": "Oshawott",
+      "dex_number": 501
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 502,
+    "fields": {
+      "name": "Dewott",
+      "dex_number": 502
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 503,
+    "fields": {
+      "name": "Samurott",
+      "dex_number": 503
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 504,
+    "fields": {
+      "name": "Patrat",
+      "dex_number": 504
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 505,
+    "fields": {
+      "name": "Watchog",
+      "dex_number": 505
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 506,
+    "fields": {
+      "name": "Lillipup",
+      "dex_number": 506
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 507,
+    "fields": {
+      "name": "Herdier",
+      "dex_number": 507
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 508,
+    "fields": {
+      "name": "Stoutland",
+      "dex_number": 508
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 509,
+    "fields": {
+      "name": "Purrloin",
+      "dex_number": 509
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 510,
+    "fields": {
+      "name": "Liepard",
+      "dex_number": 510
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 511,
+    "fields": {
+      "name": "Pansage",
+      "dex_number": 511
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 512,
+    "fields": {
+      "name": "Simisage",
+      "dex_number": 512
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 513,
+    "fields": {
+      "name": "Pansear",
+      "dex_number": 513
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 514,
+    "fields": {
+      "name": "Simisear",
+      "dex_number": 514
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 515,
+    "fields": {
+      "name": "Panpour",
+      "dex_number": 515
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 516,
+    "fields": {
+      "name": "Simipour",
+      "dex_number": 516
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 517,
+    "fields": {
+      "name": "Munna",
+      "dex_number": 517
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 518,
+    "fields": {
+      "name": "Musharna",
+      "dex_number": 518
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 519,
+    "fields": {
+      "name": "Pidove",
+      "dex_number": 519
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 520,
+    "fields": {
+      "name": "Tranquill",
+      "dex_number": 520
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 521,
+    "fields": {
+      "name": "Unfezant",
+      "dex_number": 521
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 522,
+    "fields": {
+      "name": "Blitzle",
+      "dex_number": 522
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 523,
+    "fields": {
+      "name": "Zebstrika",
+      "dex_number": 523
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 524,
+    "fields": {
+      "name": "Roggenrola",
+      "dex_number": 524
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 525,
+    "fields": {
+      "name": "Boldore",
+      "dex_number": 525
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 526,
+    "fields": {
+      "name": "Gigalith",
+      "dex_number": 526
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 527,
+    "fields": {
+      "name": "Woobat",
+      "dex_number": 527
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 528,
+    "fields": {
+      "name": "Swoobat",
+      "dex_number": 528
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 529,
+    "fields": {
+      "name": "Drilbur",
+      "dex_number": 529
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 530,
+    "fields": {
+      "name": "Excadrill",
+      "dex_number": 530
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 531,
+    "fields": {
+      "name": "Audino",
+      "dex_number": 531
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 532,
+    "fields": {
+      "name": "Timburr",
+      "dex_number": 532
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 533,
+    "fields": {
+      "name": "Gurdurr",
+      "dex_number": 533
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 534,
+    "fields": {
+      "name": "Conkeldurr",
+      "dex_number": 534
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 535,
+    "fields": {
+      "name": "Tympole",
+      "dex_number": 535
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 536,
+    "fields": {
+      "name": "Palpitoad",
+      "dex_number": 536
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 537,
+    "fields": {
+      "name": "Seismitoad",
+      "dex_number": 537
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 538,
+    "fields": {
+      "name": "Throh",
+      "dex_number": 538
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 539,
+    "fields": {
+      "name": "Sawk",
+      "dex_number": 539
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 540,
+    "fields": {
+      "name": "Sewaddle",
+      "dex_number": 540
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 541,
+    "fields": {
+      "name": "Swadloon",
+      "dex_number": 541
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 542,
+    "fields": {
+      "name": "Leavanny",
+      "dex_number": 542
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 543,
+    "fields": {
+      "name": "Venipede",
+      "dex_number": 543
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 544,
+    "fields": {
+      "name": "Whirlipede",
+      "dex_number": 544
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 545,
+    "fields": {
+      "name": "Scolipede",
+      "dex_number": 545
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 546,
+    "fields": {
+      "name": "Cottonee",
+      "dex_number": 546
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 547,
+    "fields": {
+      "name": "Whimsicott",
+      "dex_number": 547
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 548,
+    "fields": {
+      "name": "Petilil",
+      "dex_number": 548
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 549,
+    "fields": {
+      "name": "Lilligant",
+      "dex_number": 549
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 550,
+    "fields": {
+      "name": "Basculin",
+      "dex_number": 550
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 551,
+    "fields": {
+      "name": "Sandile",
+      "dex_number": 551
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 552,
+    "fields": {
+      "name": "Krokorok",
+      "dex_number": 552
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 553,
+    "fields": {
+      "name": "Krookodile",
+      "dex_number": 553
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 554,
+    "fields": {
+      "name": "Darumaka",
+      "dex_number": 554
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 555,
+    "fields": {
+      "name": "Darmanitan",
+      "dex_number": 555
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 556,
+    "fields": {
+      "name": "Maractus",
+      "dex_number": 556
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 557,
+    "fields": {
+      "name": "Dwebble",
+      "dex_number": 557
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 558,
+    "fields": {
+      "name": "Crustle",
+      "dex_number": 558
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 559,
+    "fields": {
+      "name": "Scraggy",
+      "dex_number": 559
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 560,
+    "fields": {
+      "name": "Scrafty",
+      "dex_number": 560
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 561,
+    "fields": {
+      "name": "Sigilyph",
+      "dex_number": 561
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 562,
+    "fields": {
+      "name": "Yamask",
+      "dex_number": 562
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 563,
+    "fields": {
+      "name": "Cofagrigus",
+      "dex_number": 563
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 564,
+    "fields": {
+      "name": "Tirtouga",
+      "dex_number": 564
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 565,
+    "fields": {
+      "name": "Carracosta",
+      "dex_number": 565
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 566,
+    "fields": {
+      "name": "Archen",
+      "dex_number": 566
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 567,
+    "fields": {
+      "name": "Archeops",
+      "dex_number": 567
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 568,
+    "fields": {
+      "name": "Trubbish",
+      "dex_number": 568
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 569,
+    "fields": {
+      "name": "Garbodor",
+      "dex_number": 569
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 570,
+    "fields": {
+      "name": "Zorua",
+      "dex_number": 570
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 571,
+    "fields": {
+      "name": "Zoroark",
+      "dex_number": 571
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 572,
+    "fields": {
+      "name": "Minccino",
+      "dex_number": 572
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 573,
+    "fields": {
+      "name": "Cinccino",
+      "dex_number": 573
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 574,
+    "fields": {
+      "name": "Gothita",
+      "dex_number": 574
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 575,
+    "fields": {
+      "name": "Gothorita",
+      "dex_number": 575
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 576,
+    "fields": {
+      "name": "Gothitelle",
+      "dex_number": 576
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 577,
+    "fields": {
+      "name": "Solosis",
+      "dex_number": 577
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 578,
+    "fields": {
+      "name": "Duosion",
+      "dex_number": 578
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 579,
+    "fields": {
+      "name": "Reuniclus",
+      "dex_number": 579
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 580,
+    "fields": {
+      "name": "Ducklett",
+      "dex_number": 580
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 581,
+    "fields": {
+      "name": "Swanna",
+      "dex_number": 581
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 582,
+    "fields": {
+      "name": "Vanillite",
+      "dex_number": 582
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 583,
+    "fields": {
+      "name": "Vanillish",
+      "dex_number": 583
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 584,
+    "fields": {
+      "name": "Vanilluxe",
+      "dex_number": 584
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 585,
+    "fields": {
+      "name": "Deerling",
+      "dex_number": 585
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 586,
+    "fields": {
+      "name": "Sawsbuck",
+      "dex_number": 586
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 587,
+    "fields": {
+      "name": "Emolga",
+      "dex_number": 587
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 588,
+    "fields": {
+      "name": "Karrablast",
+      "dex_number": 588
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 589,
+    "fields": {
+      "name": "Escavalier",
+      "dex_number": 589
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 590,
+    "fields": {
+      "name": "Foongus",
+      "dex_number": 590
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 591,
+    "fields": {
+      "name": "Amoonguss",
+      "dex_number": 591
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 592,
+    "fields": {
+      "name": "Frillish",
+      "dex_number": 592
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 593,
+    "fields": {
+      "name": "Jellicent",
+      "dex_number": 593
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 594,
+    "fields": {
+      "name": "Alomomola",
+      "dex_number": 594
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 595,
+    "fields": {
+      "name": "Joltik",
+      "dex_number": 595
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 596,
+    "fields": {
+      "name": "Galvantula",
+      "dex_number": 596
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 597,
+    "fields": {
+      "name": "Ferroseed",
+      "dex_number": 597
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 598,
+    "fields": {
+      "name": "Ferrothorn",
+      "dex_number": 598
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 599,
+    "fields": {
+      "name": "Klink",
+      "dex_number": 599
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 600,
+    "fields": {
+      "name": "Klang",
+      "dex_number": 600
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 601,
+    "fields": {
+      "name": "Klinklang",
+      "dex_number": 601
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 602,
+    "fields": {
+      "name": "Tynamo",
+      "dex_number": 602
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 603,
+    "fields": {
+      "name": "Eelektrik",
+      "dex_number": 603
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 604,
+    "fields": {
+      "name": "Eelektross",
+      "dex_number": 604
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 605,
+    "fields": {
+      "name": "Elgyem",
+      "dex_number": 605
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 606,
+    "fields": {
+      "name": "Beheeyem",
+      "dex_number": 606
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 607,
+    "fields": {
+      "name": "Litwick",
+      "dex_number": 607
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 608,
+    "fields": {
+      "name": "Lampent",
+      "dex_number": 608
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 609,
+    "fields": {
+      "name": "Chandelure",
+      "dex_number": 609
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 610,
+    "fields": {
+      "name": "Axew",
+      "dex_number": 610
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 611,
+    "fields": {
+      "name": "Fraxure",
+      "dex_number": 611
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 612,
+    "fields": {
+      "name": "Haxorus",
+      "dex_number": 612
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 613,
+    "fields": {
+      "name": "Cubchoo",
+      "dex_number": 613
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 614,
+    "fields": {
+      "name": "Beartic",
+      "dex_number": 614
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 615,
+    "fields": {
+      "name": "Cryogonal",
+      "dex_number": 615
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 616,
+    "fields": {
+      "name": "Shelmet",
+      "dex_number": 616
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 617,
+    "fields": {
+      "name": "Accelgor",
+      "dex_number": 617
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 618,
+    "fields": {
+      "name": "Stunfisk",
+      "dex_number": 618
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 619,
+    "fields": {
+      "name": "Mienfoo",
+      "dex_number": 619
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 620,
+    "fields": {
+      "name": "Mienshao",
+      "dex_number": 620
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 621,
+    "fields": {
+      "name": "Druddigon",
+      "dex_number": 621
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 622,
+    "fields": {
+      "name": "Golett",
+      "dex_number": 622
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 623,
+    "fields": {
+      "name": "Golurk",
+      "dex_number": 623
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 624,
+    "fields": {
+      "name": "Pawniard",
+      "dex_number": 624
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 625,
+    "fields": {
+      "name": "Bisharp",
+      "dex_number": 625
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 626,
+    "fields": {
+      "name": "Bouffalant",
+      "dex_number": 626
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 627,
+    "fields": {
+      "name": "Rufflet",
+      "dex_number": 627
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 628,
+    "fields": {
+      "name": "Braviary",
+      "dex_number": 628
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 629,
+    "fields": {
+      "name": "Vullaby",
+      "dex_number": 629
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 630,
+    "fields": {
+      "name": "Mandibuzz",
+      "dex_number": 630
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 631,
+    "fields": {
+      "name": "Heatmor",
+      "dex_number": 631
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 632,
+    "fields": {
+      "name": "Durant",
+      "dex_number": 632
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 633,
+    "fields": {
+      "name": "Deino",
+      "dex_number": 633
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 634,
+    "fields": {
+      "name": "Zweilous",
+      "dex_number": 634
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 635,
+    "fields": {
+      "name": "Hydreigon",
+      "dex_number": 635
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 636,
+    "fields": {
+      "name": "Larvesta",
+      "dex_number": 636
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 637,
+    "fields": {
+      "name": "Volcarona",
+      "dex_number": 637
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 638,
+    "fields": {
+      "name": "Cobalion",
+      "dex_number": 638
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 639,
+    "fields": {
+      "name": "Terrakion",
+      "dex_number": 639
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 640,
+    "fields": {
+      "name": "Virizion",
+      "dex_number": 640
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 641,
+    "fields": {
+      "name": "Tornadus",
+      "dex_number": 641
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 642,
+    "fields": {
+      "name": "Thundurus",
+      "dex_number": 642
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 643,
+    "fields": {
+      "name": "Reshiram",
+      "dex_number": 643
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 644,
+    "fields": {
+      "name": "Zekrom ",
+      "dex_number": 644
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 645,
+    "fields": {
+      "name": "Landorus",
+      "dex_number": 645
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 646,
+    "fields": {
+      "name": "Kyurem",
+      "dex_number": 646
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 647,
+    "fields": {
+      "name": "Keldeo",
+      "dex_number": 647
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 648,
+    "fields": {
+      "name": "Meloetta",
+      "dex_number": 648
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 649,
+    "fields": {
+      "name": "Genesect",
+      "dex_number": 649
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 650,
+    "fields": {
+      "name": "Chespin",
+      "dex_number": 650
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 651,
+    "fields": {
+      "name": "Quilladin",
+      "dex_number": 651
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 652,
+    "fields": {
+      "name": "Chesnaught",
+      "dex_number": 652
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 653,
+    "fields": {
+      "name": "Fennekin",
+      "dex_number": 653
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 654,
+    "fields": {
+      "name": "Braixen",
+      "dex_number": 654
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 655,
+    "fields": {
+      "name": "Delphox",
+      "dex_number": 655
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 656,
+    "fields": {
+      "name": "Froakie",
+      "dex_number": 656
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 657,
+    "fields": {
+      "name": "Frogadier",
+      "dex_number": 657
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 658,
+    "fields": {
+      "name": "Greninja",
+      "dex_number": 658
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 659,
+    "fields": {
+      "name": "Bunnelby",
+      "dex_number": 659
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 660,
+    "fields": {
+      "name": "Diggersby",
+      "dex_number": 660
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 661,
+    "fields": {
+      "name": "Fletchling",
+      "dex_number": 661
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 662,
+    "fields": {
+      "name": "Fletchinder",
+      "dex_number": 662
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 663,
+    "fields": {
+      "name": "Talonflame",
+      "dex_number": 663
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 664,
+    "fields": {
+      "name": "Scatterbug",
+      "dex_number": 664
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 665,
+    "fields": {
+      "name": "Spewpa",
+      "dex_number": 665
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 666,
+    "fields": {
+      "name": "Vivillon",
+      "dex_number": 666
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 667,
+    "fields": {
+      "name": "Litleo",
+      "dex_number": 667
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 668,
+    "fields": {
+      "name": "Pyroar",
+      "dex_number": 668
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 669,
+    "fields": {
+      "name": "Flabebe",
+      "dex_number": 669
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 670,
+    "fields": {
+      "name": "Floette",
+      "dex_number": 670
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 671,
+    "fields": {
+      "name": "Florges",
+      "dex_number": 671
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 672,
+    "fields": {
+      "name": "Skiddo",
+      "dex_number": 672
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 673,
+    "fields": {
+      "name": "Gogoat",
+      "dex_number": 673
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 674,
+    "fields": {
+      "name": "Pancham",
+      "dex_number": 674
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 675,
+    "fields": {
+      "name": "Pangoro",
+      "dex_number": 675
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 676,
+    "fields": {
+      "name": "Furfrou",
+      "dex_number": 676
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 677,
+    "fields": {
+      "name": "Espurr",
+      "dex_number": 677
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 678,
+    "fields": {
+      "name": "Meowstic",
+      "dex_number": 678
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 679,
+    "fields": {
+      "name": "Honedge",
+      "dex_number": 679
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 680,
+    "fields": {
+      "name": "Doublade",
+      "dex_number": 680
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 681,
+    "fields": {
+      "name": "Aegislash",
+      "dex_number": 681
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 682,
+    "fields": {
+      "name": "Spritzee",
+      "dex_number": 682
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 683,
+    "fields": {
+      "name": "Aromatisse",
+      "dex_number": 683
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 684,
+    "fields": {
+      "name": "Swirlix",
+      "dex_number": 684
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 685,
+    "fields": {
+      "name": "Slurpuff",
+      "dex_number": 685
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 686,
+    "fields": {
+      "name": "Inkay",
+      "dex_number": 686
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 687,
+    "fields": {
+      "name": "Malamar",
+      "dex_number": 687
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 688,
+    "fields": {
+      "name": "Binacle",
+      "dex_number": 688
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 689,
+    "fields": {
+      "name": "Barbaracle",
+      "dex_number": 689
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 690,
+    "fields": {
+      "name": "Skrelp",
+      "dex_number": 690
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 691,
+    "fields": {
+      "name": "Dragalge",
+      "dex_number": 691
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 692,
+    "fields": {
+      "name": "Clauncher",
+      "dex_number": 692
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 693,
+    "fields": {
+      "name": "Clawitzer",
+      "dex_number": 693
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 694,
+    "fields": {
+      "name": "Helioptile",
+      "dex_number": 694
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 695,
+    "fields": {
+      "name": "Heliolisk",
+      "dex_number": 695
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 696,
+    "fields": {
+      "name": "Tyrunt",
+      "dex_number": 696
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 697,
+    "fields": {
+      "name": "Tyrantrum",
+      "dex_number": 697
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 698,
+    "fields": {
+      "name": "Amaura",
+      "dex_number": 698
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 699,
+    "fields": {
+      "name": "Aurorus",
+      "dex_number": 699
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 700,
+    "fields": {
+      "name": "Sylveon",
+      "dex_number": 700
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 701,
+    "fields": {
+      "name": "Hawlucha",
+      "dex_number": 701
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 702,
+    "fields": {
+      "name": "Dedenne",
+      "dex_number": 702
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 703,
+    "fields": {
+      "name": "Carbink",
+      "dex_number": 703
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 704,
+    "fields": {
+      "name": "Goomy",
+      "dex_number": 704
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 705,
+    "fields": {
+      "name": "Sliggoo",
+      "dex_number": 705
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 706,
+    "fields": {
+      "name": "Goodra",
+      "dex_number": 706
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 707,
+    "fields": {
+      "name": "Klefki",
+      "dex_number": 707
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 708,
+    "fields": {
+      "name": "Phantump",
+      "dex_number": 708
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 709,
+    "fields": {
+      "name": "Trevenant",
+      "dex_number": 709
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 710,
+    "fields": {
+      "name": "Pumpkaboo",
+      "dex_number": 710
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 711,
+    "fields": {
+      "name": "Gourgeist",
+      "dex_number": 711
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 712,
+    "fields": {
+      "name": "Bergmite",
+      "dex_number": 712
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 713,
+    "fields": {
+      "name": "Avalugg",
+      "dex_number": 713
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 714,
+    "fields": {
+      "name": "Noibat",
+      "dex_number": 714
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 715,
+    "fields": {
+      "name": "Noivern",
+      "dex_number": 715
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 716,
+    "fields": {
+      "name": "Xerneas",
+      "dex_number": 716
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 717,
+    "fields": {
+      "name": "Yveltal",
+      "dex_number": 717
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 718,
+    "fields": {
+      "name": "Zygarde",
+      "dex_number": 718
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 719,
+    "fields": {
+      "name": "Diancie",
+      "dex_number": 719
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 720,
+    "fields": {
+      "name": "Hoopa",
+      "dex_number": 720
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 721,
+    "fields": {
+      "name": "Volcanion",
+      "dex_number": 721
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 722,
+    "fields": {
+      "name": "Rowlet",
+      "dex_number": 722
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 723,
+    "fields": {
+      "name": "Dartrix",
+      "dex_number": 723
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 724,
+    "fields": {
+      "name": "Decidueye",
+      "dex_number": 724
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 725,
+    "fields": {
+      "name": "Litten",
+      "dex_number": 725
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 726,
+    "fields": {
+      "name": "Torracat",
+      "dex_number": 726
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 727,
+    "fields": {
+      "name": "Incineroar",
+      "dex_number": 727
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 728,
+    "fields": {
+      "name": "Popplio",
+      "dex_number": 728
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 729,
+    "fields": {
+      "name": "Brionne",
+      "dex_number": 729
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 730,
+    "fields": {
+      "name": "Primarina",
+      "dex_number": 730
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 731,
+    "fields": {
+      "name": "Pikipek",
+      "dex_number": 731
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 732,
+    "fields": {
+      "name": "Trumbeak",
+      "dex_number": 732
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 733,
+    "fields": {
+      "name": "Toucannon",
+      "dex_number": 733
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 734,
+    "fields": {
+      "name": "Yungoos",
+      "dex_number": 734
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 735,
+    "fields": {
+      "name": "Gumshoos",
+      "dex_number": 735
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 736,
+    "fields": {
+      "name": "Grubbin",
+      "dex_number": 736
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 737,
+    "fields": {
+      "name": "Charjabug",
+      "dex_number": 737
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 738,
+    "fields": {
+      "name": "Vikavolt",
+      "dex_number": 738
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 739,
+    "fields": {
+      "name": "Crabrawler",
+      "dex_number": 739
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 740,
+    "fields": {
+      "name": "Crabominable",
+      "dex_number": 740
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 741,
+    "fields": {
+      "name": "Oricorio",
+      "dex_number": 741
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 742,
+    "fields": {
+      "name": "Cutiefly",
+      "dex_number": 742
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 743,
+    "fields": {
+      "name": "Ribombee",
+      "dex_number": 743
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 744,
+    "fields": {
+      "name": "Rockruff",
+      "dex_number": 744
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 745,
+    "fields": {
+      "name": "Lycanroc",
+      "dex_number": 745
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 746,
+    "fields": {
+      "name": "Wishiwashi",
+      "dex_number": 746
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 747,
+    "fields": {
+      "name": "Mareanie",
+      "dex_number": 747
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 748,
+    "fields": {
+      "name": "Toxapex",
+      "dex_number": 748
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 749,
+    "fields": {
+      "name": "Mudbray",
+      "dex_number": 749
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 750,
+    "fields": {
+      "name": "Mudsdale",
+      "dex_number": 750
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 751,
+    "fields": {
+      "name": "Dewpider",
+      "dex_number": 751
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 752,
+    "fields": {
+      "name": "Araquanid",
+      "dex_number": 752
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 753,
+    "fields": {
+      "name": "Fomantis",
+      "dex_number": 753
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 754,
+    "fields": {
+      "name": "Lurantis",
+      "dex_number": 754
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 755,
+    "fields": {
+      "name": "Morelull",
+      "dex_number": 755
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 756,
+    "fields": {
+      "name": "Shiinotic",
+      "dex_number": 756
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 757,
+    "fields": {
+      "name": "Salandit",
+      "dex_number": 757
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 758,
+    "fields": {
+      "name": "Salazzle",
+      "dex_number": 758
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 759,
+    "fields": {
+      "name": "Stufful",
+      "dex_number": 759
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 760,
+    "fields": {
+      "name": "Bewear",
+      "dex_number": 760
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 761,
+    "fields": {
+      "name": "Bounsweet",
+      "dex_number": 761
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 762,
+    "fields": {
+      "name": "Steenee",
+      "dex_number": 762
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 763,
+    "fields": {
+      "name": "Tsareena",
+      "dex_number": 763
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 764,
+    "fields": {
+      "name": "Comfey",
+      "dex_number": 764
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 765,
+    "fields": {
+      "name": "Oranguru",
+      "dex_number": 765
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 766,
+    "fields": {
+      "name": "Passimian",
+      "dex_number": 766
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 767,
+    "fields": {
+      "name": "Wimpod",
+      "dex_number": 767
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 768,
+    "fields": {
+      "name": "Golisopod",
+      "dex_number": 768
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 769,
+    "fields": {
+      "name": "Sandygast",
+      "dex_number": 769
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 770,
+    "fields": {
+      "name": "Palossand",
+      "dex_number": 770
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 771,
+    "fields": {
+      "name": "Pyukumuku",
+      "dex_number": 771
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 772,
+    "fields": {
+      "name": "Type: Null",
+      "dex_number": 772
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 773,
+    "fields": {
+      "name": "Silvally",
+      "dex_number": 773
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 774,
+    "fields": {
+      "name": "Minior",
+      "dex_number": 774
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 775,
+    "fields": {
+      "name": "Komala",
+      "dex_number": 775
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 776,
+    "fields": {
+      "name": "Turtonator",
+      "dex_number": 776
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 777,
+    "fields": {
+      "name": "Togedemaru",
+      "dex_number": 777
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 778,
+    "fields": {
+      "name": "Mimikyu",
+      "dex_number": 778
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 779,
+    "fields": {
+      "name": "Bruxish",
+      "dex_number": 779
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 780,
+    "fields": {
+      "name": "Drampa",
+      "dex_number": 780
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 781,
+    "fields": {
+      "name": "Dhelmise",
+      "dex_number": 781
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 782,
+    "fields": {
+      "name": "Jangmo-o",
+      "dex_number": 782
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 783,
+    "fields": {
+      "name": "Hakamo-o",
+      "dex_number": 783
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 784,
+    "fields": {
+      "name": "Kommo-o",
+      "dex_number": 784
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 785,
+    "fields": {
+      "name": "Tapu Koko",
+      "dex_number": 785
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 786,
+    "fields": {
+      "name": "Tapu Lele",
+      "dex_number": 786
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 787,
+    "fields": {
+      "name": "Tapu Bulu",
+      "dex_number": 787
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 788,
+    "fields": {
+      "name": "Tapu Fini",
+      "dex_number": 788
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 789,
+    "fields": {
+      "name": "Cosmog",
+      "dex_number": 789
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 790,
+    "fields": {
+      "name": "Cosmoem",
+      "dex_number": 790
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 791,
+    "fields": {
+      "name": "Solgaleo",
+      "dex_number": 791
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 792,
+    "fields": {
+      "name": "Lunala",
+      "dex_number": 792
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 793,
+    "fields": {
+      "name": "Nihilego",
+      "dex_number": 793
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 794,
+    "fields": {
+      "name": "Buzzwole",
+      "dex_number": 794
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 795,
+    "fields": {
+      "name": "Pheromosa",
+      "dex_number": 795
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 796,
+    "fields": {
+      "name": "Xurkitree",
+      "dex_number": 796
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 797,
+    "fields": {
+      "name": "Celesteela",
+      "dex_number": 797
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 798,
+    "fields": {
+      "name": "Kartana",
+      "dex_number": 798
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 799,
+    "fields": {
+      "name": "Guzzlord",
+      "dex_number": 799
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 800,
+    "fields": {
+      "name": "Necrozma",
+      "dex_number": 800
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 801,
+    "fields": {
+      "name": "Magearna",
+      "dex_number": 801
+    }
+  },
+  {
+    "model": "api.pokemon",
+    "pk": 802,
+    "fields": {
+      "name": "Marshadow",
+      "dex_number": 802
+    }
+  }
+]
