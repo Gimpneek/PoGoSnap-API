@@ -1,7 +1,6 @@
 """ URLS for api module """
 from django.conf.urls import url, include
 from rest_framework_nested import routers
-from rest_framework_jwt.views import obtain_jwt_token
 from api.view_sets.profile import ProfileViewSet
 from api.view_sets.image import ImageViewSet
 from api.view_sets.pokedex_entry import PokedexEntryViewSet
@@ -26,8 +25,7 @@ PROFILE_ROUTER.register(
 
 urlpatterns = [
     url('v1/', include(API_ROUTER.urls)),
-    url('v1/', include(PROFILE_ROUTER.urls)),
-    url('v1/api-token-auth/', obtain_jwt_token)
+    url('v1/', include(PROFILE_ROUTER.urls))
 ]
 
 API_URLS = urlpatterns, 'api', 'api'
