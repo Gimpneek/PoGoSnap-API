@@ -2,11 +2,15 @@
 from django.contrib.auth.models import User
 from django.core.files import File
 from unittest.mock import MagicMock
+from uuid import uuid4
+from datetime import datetime, timedelta
+from oauth2_provider.models import Application, AccessToken
 from api.models.profile import Profile
 from api.models.pokemon import Pokemon
 from api.models.image import Image
 from api.models.pokedex_entry import PokedexEntry
 from api.models.pokedex import Pokedex
+import pytz
 
 
 POKEMON_NAME = 'Mew'
@@ -148,3 +152,46 @@ def create_pokedex(profile=None, entries=None):
         pokedex.entries.add(entry)
     pokedex.save()
     return pokedex
+
+
+def create_facebook_app(user=None):
+    """
+    Create Facebook Application for Django oAuth2
+
+    :param user: User object
+    :return: Application object
+    """
+    if not user:
+        user = create_user()
+    facebook = Application.objects.create(
+        client_id=str(uuid4()),
+        client_type='confidential',
+        authorization_grant_type='password',
+        client_secret='test_facebook_secret',
+        name='Test Facebook',
+        user=user
+    )
+    return facebook
+
+
+def create_access_token(user=None, app=None):
+    """
+    Create access token for supplied user using supplied oAuth2 app
+
+    :param user: User object
+    :param app: Application object
+    :return: Access Token
+    """
+    if not user:
+        user = create_user()
+    if not app:
+        app = create_facebook_app(user)
+    now = datetime.now(tz=pytz.UTC)
+    expiry_datetime = now + timedelta(days=1)
+    token = AccessToken.objects.create(
+        user=user,
+        application=app,
+        token=str(uuid4()),
+        expires=expiry_datetime
+    )
+    return token
