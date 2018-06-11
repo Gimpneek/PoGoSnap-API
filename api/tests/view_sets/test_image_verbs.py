@@ -5,7 +5,7 @@ from django.core.files import File
 from unittest.mock import MagicMock
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
-    create_image, USER_NAME
+    create_image, create_access_token
 
 
 class TestImageVerbsCommon(TestCase):
@@ -19,10 +19,8 @@ class TestImageVerbsCommon(TestCase):
         self.pokemon = create_pokemon()
         self.profile = create_profile()
         self.image = create_image(pokemon=self.pokemon, profile=self.profile)
+        self.access_token = create_access_token(user=self.profile.user)
         self.api = APIClient()
-        self.api.login(
-            username=USER_NAME,
-            password=USER_NAME)
         self.url = '/api/v1/images/'
 
 
@@ -60,7 +58,9 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
                 'pokemon': self.pokemon.id,
                 'image': file_mock
             },
-            format='multipart')
+            format='multipart',
+            HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token)
+        )
         self.assertEqual(resp.status_code, 201)
 
     def test_post_error(self):
@@ -73,7 +73,8 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
             {
                 'pokemon': 'a'
             },
-            format='json'
+            format='json',
+            HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token)
         )
         self.assertEqual(resp.status_code, 400)
 

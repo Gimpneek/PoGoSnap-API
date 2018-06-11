@@ -3,8 +3,8 @@ import allure
 from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
-    create_image, create_pokedex, create_pokedex_entry, USER_NAME, \
-    create_another_profile, ANOTHER_PROFILE_NAME
+    create_image, create_pokedex, create_pokedex_entry, \
+    create_another_profile, ANOTHER_PROFILE_NAME, create_access_token
 
 
 class TestPokedexVerbsCommon(TestCase):
@@ -22,10 +22,8 @@ class TestPokedexVerbsCommon(TestCase):
             create_pokedex_entry(image=self.image, pokemon=self.pokemon)
         self.pokedex = \
             create_pokedex(profile=self.profile, entries=[self.entry])
+        self.access_token = create_access_token(user=self.profile.user)
         self.api = APIClient()
-        self.api.login(
-            username=USER_NAME,
-            password=USER_NAME)
         self.url = '/api/v1/profiles/{0}/pokedex/'.format(self.profile.name)
 
 
@@ -61,6 +59,7 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
                 'pokemon': self.pokemon.id,
                 'image': self.image.id
             },
+            HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token),
             format='json')
         self.assertEqual(resp.status_code, 201)
 
@@ -74,6 +73,7 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
             {
                 'pokemon': 'a'
             },
+            HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token),
             format='json'
         )
         self.assertEqual(resp.status_code, 400)
@@ -89,6 +89,7 @@ class TestPokedexCollectionVerbs(TestPokedexVerbsCommon):
                 'pokemon': self.pokemon.id,
                 'image': self.image.id
             },
+            HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token),
             format='json')
         self.assertEqual(resp.status_code, 403)
 
