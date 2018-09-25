@@ -15,3 +15,6 @@ lint: flake8 pylint
 
 unit_test:
 	@venv/bin/python manage.py test
+
+pytest:
+	@venv/bin/pytest
