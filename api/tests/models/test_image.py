@@ -25,7 +25,7 @@ class TestImageObject(TestCase):
         """
         Test the URL passed is saved to the object
         """
-        self.assertEqual(self.image.image.name, IMAGE_URL)
+        self.assertEqual(self.image.image, IMAGE_URL)
 
     def test_pokemon(self):
         """

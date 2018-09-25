@@ -67,7 +67,7 @@ class TestCollectionsCollectionData(CollectionSerializerCase):
         Test the image.image property of the collection
         """
         self.assertIn(
-            self.image.image.name,
+            self.image.image,
             self.result_entry.get('image').get('image')
         )
 
@@ -182,7 +182,7 @@ class TestCollectionsResourceData(CollectionSerializerCase):
         Test the image.image property of the collection
         """
         self.assertIn(
-            self.image.image.name,
+            self.image.image,
             self.result_entry.get('image').get('image')
         )
 

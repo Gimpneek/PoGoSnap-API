@@ -3,10 +3,9 @@ import allure
 from rest_framework.test import APIClient
 from api.tests.serializers.common.image import ImageSerializerCase
 from api.tests.common.test_data import create_image, create_profile, \
-    create_pokemon
+    create_pokemon, IMAGE_URL
 
 
-@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-26')
 @allure.story('See list of pokemon pictures')
 class TestImageCollectionData(ImageSerializerCase):
     """
@@ -33,8 +32,10 @@ class TestImageCollectionData(ImageSerializerCase):
         """
         Test the url property of the collection
         """
-        self.assertTrue(
-            self.image.image.name in self.result.get('image'))
+        self.assertEqual(
+            self.image.image,
+            self.result.get('image')
+        )
 
     def test_collection_profile_id(self):
         """
@@ -93,7 +94,6 @@ class TestImageCollectionData(ImageSerializerCase):
         )
 
 
-@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-29')
 @allure.story('View Image')
 class TestImageResourceData(ImageSerializerCase):
     """
@@ -123,8 +123,10 @@ class TestImageResourceData(ImageSerializerCase):
         """
         Test the name property of the resource
         """
-        self.assertTrue(
-            self.image.image.name in self.result.get('image'))
+        self.assertEqual(
+            self.result.get('image'),
+            IMAGE_URL
+        )
 
     def test_resource_desc(self):
         """

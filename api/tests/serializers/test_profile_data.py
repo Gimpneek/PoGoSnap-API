@@ -52,7 +52,7 @@ class TestProfileCollectionData(ProfileSerializerCase):
         """
         self.assertEqual(
             self.result.get('image'),
-            self.profile.featured_image.image.name)
+            self.profile.featured_image.image)
 
 
 @allure.issue('https://wrensoftware.atlassian.net/browse/GOS-37')
@@ -105,5 +105,7 @@ class TestProfileResourceData(ProfileSerializerCase):
         """
         Test the featured_image property of the resource
         """
-        self.assertTrue(
-            self.profile.featured_image.image.name in self.result.get('image'))
+        self.assertEqual(
+            self.profile.featured_image.image,
+            self.result.get('image')
+        )
