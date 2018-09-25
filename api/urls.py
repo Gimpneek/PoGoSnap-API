@@ -3,7 +3,7 @@ from django.conf.urls import url, include
 from rest_framework_nested import routers
 from api.view_sets.profile import ProfileViewSet
 from api.view_sets.image import ImageViewSet
-from api.view_sets.pokedex_entry import PokedexEntryViewSet
+from api.view_sets.collections import CollectionsViewSet
 from api.view_sets.profiles_images import ProfileImageViewSet
 
 API_ROUTER = routers.SimpleRouter()
@@ -15,7 +15,11 @@ PROFILE_ROUTER = routers.NestedSimpleRouter(
     r'profiles',
     lookup='profile'
 )
-PROFILE_ROUTER.register(r'pokedex', PokedexEntryViewSet, base_name='pokedex')
+PROFILE_ROUTER.register(
+    r'collections',
+    CollectionsViewSet,
+    base_name='collections'
+)
 PROFILE_ROUTER.register(
     r'images',
     ProfileImageViewSet,

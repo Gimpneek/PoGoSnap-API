@@ -14,16 +14,16 @@ class TestPokedexObject(TestCase):
         super(TestPokedexObject, self).setUp()
         self.profile = create_profile()
         self.pokedex_entry = create_pokedex_entry()
-        self.pokedex = Pokedex.objects.get_or_create(
-            profile=self.profile
-        )[0]
+        self.pokedex = Pokedex.objects.create(name='Pokedex')
+        self.pokedex.profile.add(self.profile)
         self.pokedex.entries.add(self.pokedex_entry)
+        self.pokedex.save()
 
     def test_profile(self):
         """
         Test that the profile passed on creation is saved to the object
         """
-        self.assertEqual(self.pokedex.profile.id, self.profile.id)
+        self.assertEqual(self.pokedex.profile.all()[0].id, self.profile.id)
 
     def test_entries(self):
         """

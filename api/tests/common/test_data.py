@@ -115,21 +115,17 @@ def create_image(profile=None, pokemon=None):
     )
 
 
-def create_pokedex_entry(image=None, pokemon=None):
+def create_pokedex_entry(image=None):
     """
     Create a pokedex entry
 
     :param image: Image object
-    :param pokemon: Pokemon object
     :return: PokedexEntry object
     """
     if not image:
         image = create_image()
-    if not pokemon:
-        pokemon = create_pokemon()
     return PokedexEntry.objects.create(
-        image=image,
-        pokemon=pokemon
+        image=image
     )
 
 
@@ -142,12 +138,10 @@ def create_pokedex(profile=None, entries=None):
     :return: Pokedex object
     """
     if not profile:
-        profile = create_profile()
+        create_profile()
     if not entries:
         entries = [create_pokedex_entry()]
-    pokedex = Pokedex.objects.get_or_create(
-        profile=profile
-    )[0]
+    pokedex = Pokedex.objects.get(name='Pokedex', profile=profile)
     for entry in entries:
         pokedex.entries.add(entry)
     pokedex.save()

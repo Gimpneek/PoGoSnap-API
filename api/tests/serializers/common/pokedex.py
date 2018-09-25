@@ -11,4 +11,4 @@ class PokedexSerializerCase(TestCase):
     def setUp(self):
         """ Set up the tests """
         super(PokedexSerializerCase, self).setUp()
-        self.url = '/api/v1/profiles/{0}/pokedex/'.format(PROFILE_NAME)
+        self.url = '/api/v1/profiles/{0}/collections/'.format(PROFILE_NAME)

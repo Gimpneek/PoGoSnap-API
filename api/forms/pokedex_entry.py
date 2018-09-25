@@ -11,6 +11,5 @@ class PokedexEntryForm(ModelForm):
         """ Metaclass for PokedexEntry form """
         model = PokedexEntry
         fields = (
-            'pokemon',
             'image'
         )

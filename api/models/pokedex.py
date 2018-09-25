@@ -12,11 +12,12 @@ class Pokedex(models.Model):
     """ Pokedex model """
 
     entries = models.ManyToManyField(PokedexEntry, blank=True)
-    profile = models.OneToOneField(Profile, on_delete=models.DO_NOTHING)
+    profile = models.ManyToManyField(Profile)
+    name = models.CharField(max_length=256, default='Pokedex')
 
     def __str__(self):
         """ String representation of the Pokedex object """
-        return "{0}'s Pokedex".format(self.profile)
+        return "{0}'s Pokedex".format(self.profile.all()[0])
 
     @receiver(post_save, sender=Profile)
     def create_profile_pokedex(sender, instance, created, **kwargs):
@@ -28,4 +29,6 @@ class Pokedex(models.Model):
         :param kwargs: keyword args
         """
         if created:
-            Pokedex.objects.create(profile=instance)
+            pokedex = Pokedex.objects.create(name='Pokedex')
+            pokedex.profile.add(instance)
+            pokedex.save()

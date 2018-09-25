@@ -19,7 +19,7 @@ class TestPokedexVerbsCommon(TestCase):
         self.pokemon = create_pokemon()
         self.image = create_image(profile=self.profile, pokemon=self.pokemon)
         self.entry = \
-            create_pokedex_entry(image=self.image, pokemon=self.pokemon)
+            create_pokedex_entry(image=self.image)
         self.pokedex = \
             create_pokedex(profile=self.profile, entries=[self.entry])
         self.api = APIClient()
