@@ -3,7 +3,7 @@ from django.test import TestCase
 from datetime import datetime
 from api.models.pokedex_entry import PokedexEntry
 from api.tests.common.test_data import create_pokemon, create_image, \
-    create_pokedex, create_profile
+    create_collection, create_profile
 
 
 class TestPokedexEntryObject(TestCase):
@@ -17,7 +17,7 @@ class TestPokedexEntryObject(TestCase):
         self.pokedex_entry = PokedexEntry.objects.create(
             image=self.image
         )
-        self.pokedex = create_pokedex(self.profile, [self.pokedex_entry])
+        self.pokedex = create_collection(self.profile, [self.pokedex_entry])
         self.nowish = datetime.now()
 
     def test_image(self):

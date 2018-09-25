@@ -3,34 +3,33 @@ import allure
 from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
-    create_image, create_pokedex, create_pokedex_entry, \
+    create_image, create_collection, create_pokedex_entry, \
     create_another_profile, ANOTHER_PROFILE_NAME, create_access_token
 
 
-class TestPokedexVerbsCommon(TestCase):
+class TestCollectionVerbsCommon(TestCase):
     """
-    Common setUp for Pokedex Verb Tests
+    Common setUp for Collection Verb Tests
     """
 
     def setUp(self):
         """ Set up the tests """
-        super(TestPokedexVerbsCommon, self).setUp()
+        super(TestCollectionVerbsCommon, self).setUp()
         self.profile = create_profile()
         self.pokemon = create_pokemon()
         self.image = create_image(profile=self.profile, pokemon=self.pokemon)
         self.entry = \
             create_pokedex_entry(image=self.image)
         self.pokedex = \
-            create_pokedex(profile=self.profile, entries=[self.entry])
+            create_collection(profile=self.profile, entries=[self.entry])
         self.access_token = create_access_token(user=self.profile.user)
         self.api = APIClient()
         self.url = \
             '/api/v1/profiles/{0}/collections/'.format(self.profile.name)
 
 
-@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
-@allure.story('User\'s Pokedex')
-class TestCollectionsCollectionVerbs(TestPokedexVerbsCommon):
+@allure.story('User\'s Collection')
+class TestCollectionsCollectionVerbs(TestCollectionVerbsCommon):
     """
     Test the HTTP Verb access of Collections Collection
     """
@@ -79,7 +78,7 @@ class TestCollectionsCollectionVerbs(TestPokedexVerbsCommon):
 
     def test_post_other_user(self):
         """
-        Test that post to another User's pokedex is not allowed
+        Test that post to another User's collections is not allowed
         """
         create_another_profile()
         resp = self.api.post(
@@ -146,7 +145,7 @@ class TestCollectionsCollectionVerbs(TestPokedexVerbsCommon):
         self.assertEqual(resp.status_code, 405)
 
 
-class TestCollectionResourceVerbs(TestPokedexVerbsCommon):
+class TestCollectionResourceVerbs(TestCollectionVerbsCommon):
     """ Test the HTTP Verb access of Image Resource """
 
     def setUp(self):

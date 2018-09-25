@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """ Form definition for Collection """
 from django.forms.models import ModelForm
-from api.models.pokedex import Pokedex
+from api.models.collection import Collection
 
 
 class CollectionForm(ModelForm):
@@ -9,7 +9,7 @@ class CollectionForm(ModelForm):
 
     class Meta(object):
         """ Metaclass for Collection form """
-        model = Pokedex
+        model = Collection
         fields = (
             'name',
         )

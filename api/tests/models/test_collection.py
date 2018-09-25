@@ -1,20 +1,20 @@
-""" Tests for Pokedex Model """
+""" Tests for Collection Model """
 from django.test import TestCase
-from api.models.pokedex import Pokedex
+from api.models.collection import Collection
 from api.tests.common.test_data import create_pokedex_entry, create_profile
 
 
-class TestPokedexObject(TestCase):
-    """ Test the creation of the Pokedex Object """
+class TestCollectionObject(TestCase):
+    """ Test the creation of the Collection Object """
 
     def setUp(self):
         """
         Set up tests
         """
-        super(TestPokedexObject, self).setUp()
+        super(TestCollectionObject, self).setUp()
         self.profile = create_profile()
         self.pokedex_entry = create_pokedex_entry()
-        self.pokedex = Pokedex.objects.create(name='Pokedex')
+        self.pokedex = Collection.objects.create(name='Pokedex')
         self.pokedex.profile.add(self.profile)
         self.pokedex.entries.add(self.pokedex_entry)
         self.pokedex.save()
@@ -27,7 +27,7 @@ class TestPokedexObject(TestCase):
 
     def test_entries(self):
         """
-        Test that assigning a pokedex entry to the pokedex is saved
+        Test that assigning a pokedex entry to the collection is saved
         """
         self.assertEqual(
             self.pokedex.entries.all()[0].id, self.pokedex_entry.id)

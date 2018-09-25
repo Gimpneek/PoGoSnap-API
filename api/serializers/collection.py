@@ -1,7 +1,7 @@
 # pylint: disable=no-self-use
 """ Serializer for Collection model """
 from rest_framework import serializers
-from api.models.pokedex import Pokedex
+from api.models.collection import Collection
 from api.serializers.pokedex_entry import PokedexEntrySerializer
 
 
@@ -12,7 +12,7 @@ class CollectionSerializer(serializers.ModelSerializer):
 
     class Meta:
         """ Meta class for serializer """
-        model = Pokedex
+        model = Collection
         fields = (
             'id',
             'entries'

@@ -3,7 +3,7 @@
 from rest_framework import viewsets, status, mixins
 from rest_framework.response import Response
 from api.models.profile import Profile
-from api.models.pokedex import Pokedex
+from api.models.collection import Collection
 from api.serializers.collection import CollectionSerializer
 from api.forms.collections import CollectionForm
 
@@ -16,32 +16,16 @@ class CollectionsViewSet(viewsets.GenericViewSet,
     View Set for Collection Serializer
     """
 
-    queryset = Pokedex.objects.all().order_by('id')
+    queryset = Collection.objects.all().order_by('id')
     serializer_class = CollectionSerializer
-
-    # # pylint: disable=arguments-differ
-    # def list(self, request, profile_name=None):
-    #     """
-    #     List the entries from the supplied Profile's pokedex
-    #
-    #     :param request: Django Request
-    #     :param profile_name: Name of the profile to fetch PokedexEntries from
-    #     :return: List of PokedexEntries
-    #     """
-    #     profile = Profile.objects.get(name__iexact=profile_name)
-    #     pokedex = Pokedex.objects.get(profile=profile)
-    #     page = self.paginate_queryset(
-    #         pokedex.entries.all().order_by('pokemon__dex_number'))
-    #     serialized = PokedexEntrySerializer(page, many=True)
-    #     return self.get_paginated_response(serialized.data)
 
     # pylint: disable=no-self-use
     def create(self, request, profile_name=None):
         """
-        Create a PokedexEntry
+        Create a Collection
 
         :param request: Django Request
-        :param profile_name: Name of the profile to create PokedexEntry for
+        :param profile_name: Name of the profile to create Collection for
         :return: Response code
         """
         if not request.user.id:
@@ -51,7 +35,7 @@ class CollectionsViewSet(viewsets.GenericViewSet,
             return Response(status=status.HTTP_403_FORBIDDEN)
         form = CollectionForm(request.data)
         if form.is_valid():
-            collection = Pokedex.objects.create(
+            collection = Collection.objects.create(
                 name=form.data.get('name')
             )
             collection.profile.add(profile)

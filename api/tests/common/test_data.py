@@ -9,7 +9,7 @@ from api.models.profile import Profile
 from api.models.pokemon import Pokemon
 from api.models.image import Image
 from api.models.pokedex_entry import PokedexEntry
-from api.models.pokedex import Pokedex
+from api.models.collection import Collection
 import pytz
 
 
@@ -129,19 +129,19 @@ def create_pokedex_entry(image=None):
     )
 
 
-def create_pokedex(profile=None, entries=None):
+def create_collection(profile=None, entries=None):
     """
-    Create a pokedex object
+    Create a collection object
 
     :param profile: Profile object
     :param entries: A list of PokedexEntry objects
-    :return: Pokedex object
+    :return: Collection object
     """
     if not profile:
         create_profile()
     if not entries:
         entries = [create_pokedex_entry()]
-    pokedex = Pokedex.objects.get(name='Pokedex', profile=profile)
+    pokedex = Collection.objects.get(name='Pokedex', profile=profile)
     for entry in entries:
         pokedex.entries.add(entry)
     pokedex.save()

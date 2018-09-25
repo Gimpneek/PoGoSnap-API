@@ -15,4 +15,4 @@ class PokedexEntry(models.Model):
     def __str__(self):
         """ String representation of Pokedex Entry object """
         return "{0} image in {1}".format(
-            self.image.pokemon.name, self.pokedex_set.first())
+            self.image.pokemon.name, self.collection_set.first())

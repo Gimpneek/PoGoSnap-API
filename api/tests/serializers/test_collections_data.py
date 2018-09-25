@@ -3,7 +3,7 @@ import allure
 from rest_framework.test import APIClient
 from api.tests.serializers.common.pokedex import PokedexSerializerCase
 from api.tests.common.test_data import create_image, create_profile, \
-    create_pokemon, create_pokedex_entry, create_pokedex
+    create_pokemon, create_pokedex_entry, create_collection
 
 
 @allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
@@ -22,7 +22,7 @@ class TestCollectionsCollectionData(PokedexSerializerCase):
         self.entry = \
             create_pokedex_entry(image=self.image)
         self.pokedex = \
-            create_pokedex(profile=self.profile, entries=[self.entry])
+            create_collection(profile=self.profile, entries=[self.entry])
         self.api = APIClient()
         resp = self.api.get(self.url)
         self.result = resp.data.get('results')[0]
@@ -138,7 +138,7 @@ class TestCollectionsResourceData(PokedexSerializerCase):
         self.entry = \
             create_pokedex_entry(image=self.image)
         self.pokedex = \
-            create_pokedex(profile=self.profile, entries=[self.entry])
+            create_collection(profile=self.profile, entries=[self.entry])
         self.api = APIClient()
         self.resource_url = '{0}{1}/'.format(self.url, self.pokedex.id)
         resp = self.api.get(self.resource_url)
