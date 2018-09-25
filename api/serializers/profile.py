@@ -28,5 +28,5 @@ class ProfileSerializer(serializers.HyperlinkedModelSerializer):
         :return: featured_image field
         """
         if obj.featured_image:
-            return obj.featured_image.image.url
+            return obj.featured_image.image
         return ''

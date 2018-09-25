@@ -41,7 +41,7 @@ class TestCollectionsCollectionData(CollectionEntrySerializerCase):
         Test the image.image property of the collection
         """
         self.assertIn(
-            self.image.image.name,
+            self.image.image,
             self.result.get('image').get('image')
         )
 

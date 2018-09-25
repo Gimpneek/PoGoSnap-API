@@ -1,11 +1,9 @@
 """ Test the HTTP Verbs of Image """
 import allure
 from django.test import TestCase
-from django.core.files import File
-from unittest.mock import MagicMock
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
-    create_image, create_access_token
+    create_image, create_access_token, IMAGE_URL
 
 
 class TestImageVerbsCommon(TestCase):
@@ -50,13 +48,11 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
         """
         Test that post requests are allowed
         """
-        file_mock = MagicMock(spec=File, name='FileMock')
-        file_mock.name = 'test.jpg'
         resp = self.api.post(
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'image': file_mock
+                'image': IMAGE_URL
             },
             format='multipart',
             HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token)
@@ -87,7 +83,7 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': IMAGE_URL
             },
             format='json')
         self.assertEqual(resp.status_code, 401)
@@ -115,7 +111,7 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': IMAGE_URL
             },
             format='json'
         )
@@ -130,7 +126,7 @@ class TestImageCollectionVerbs(TestImageVerbsCommon):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': IMAGE_URL
             },
             format='json'
         )
@@ -170,7 +166,7 @@ class TestImageResourceVerbs(TestImageVerbsCommon):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': IMAGE_URL
             },
             format='json')
         self.assertEqual(resp.status_code, 405)
@@ -184,7 +180,7 @@ class TestImageResourceVerbs(TestImageVerbsCommon):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': IMAGE_URL
             },
             format='json')
         self.assertEqual(resp.status_code, 405)
@@ -212,7 +208,7 @@ class TestImageResourceVerbs(TestImageVerbsCommon):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': IMAGE_URL
             },
             format='json'
         )
@@ -227,7 +223,7 @@ class TestImageResourceVerbs(TestImageVerbsCommon):
             self.url,
             {
                 'pokemon': self.pokemon.id,
-                'url': 'http://meh.jpg'
+                'image': IMAGE_URL
             },
             format='json')
         self.assertEqual(resp.status_code, 405)
