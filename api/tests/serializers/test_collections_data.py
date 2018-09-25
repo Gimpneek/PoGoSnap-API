@@ -1,14 +1,13 @@
 """ Test the API for Pokedex """
 import allure
 from rest_framework.test import APIClient
-from api.tests.serializers.common.pokedex import PokedexSerializerCase
+from api.tests.serializers.common.pokedex import CollectionSerializerCase
 from api.tests.common.test_data import create_image, create_profile, \
-    create_pokemon, create_pokedex_entry, create_collection
+    create_pokemon, create_collection_entry, create_collection
 
 
-@allure.issue('https://wrensoftware.atlassian.net/browse/GOS-46')
-@allure.story('User\'s Pokedex')
-class TestCollectionsCollectionData(PokedexSerializerCase):
+@allure.story('User\'s Collection')
+class TestCollectionsCollectionData(CollectionSerializerCase):
     """
     Test the Pokedex collection endpoints data structure
     """
@@ -20,7 +19,7 @@ class TestCollectionsCollectionData(PokedexSerializerCase):
         self.pokemon = create_pokemon()
         self.image = create_image(profile=self.profile, pokemon=self.pokemon)
         self.entry = \
-            create_pokedex_entry(image=self.image)
+            create_collection_entry(image=self.image)
         self.pokedex = \
             create_collection(profile=self.profile, entries=[self.entry])
         self.api = APIClient()
@@ -124,7 +123,7 @@ class TestCollectionsCollectionData(PokedexSerializerCase):
         )
 
 
-class TestCollectionsResourceData(PokedexSerializerCase):
+class TestCollectionsResourceData(CollectionSerializerCase):
     """
     Test the Collection Resource endpoints data structure
     """
@@ -136,7 +135,7 @@ class TestCollectionsResourceData(PokedexSerializerCase):
         self.pokemon = create_pokemon()
         self.image = create_image(profile=self.profile, pokemon=self.pokemon)
         self.entry = \
-            create_pokedex_entry(image=self.image)
+            create_collection_entry(image=self.image)
         self.pokedex = \
             create_collection(profile=self.profile, entries=[self.entry])
         self.api = APIClient()

@@ -23,7 +23,7 @@ class ImageViewSet(viewsets.ModelViewSet):
             month=ExtractMonth('create_date'),
             day=ExtractDay('create_date'),
             hour=ExtractHour('create_date'),
-            entries=Count('pokedexentry')
+            entries=Count('collectionentry')
         ).order_by('-year', '-month', '-day', '-hour', '-entries')
 
     serializer_class = ImageSerializer

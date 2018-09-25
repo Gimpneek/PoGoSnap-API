@@ -1,7 +1,7 @@
 """ Tests for Collection Model """
 from django.test import TestCase
 from api.models.collection import Collection
-from api.tests.common.test_data import create_pokedex_entry, create_profile
+from api.tests.common.test_data import create_collection_entry, create_profile
 
 
 class TestCollectionObject(TestCase):
@@ -13,7 +13,7 @@ class TestCollectionObject(TestCase):
         """
         super(TestCollectionObject, self).setUp()
         self.profile = create_profile()
-        self.pokedex_entry = create_pokedex_entry()
+        self.pokedex_entry = create_collection_entry()
         self.pokedex = Collection.objects.create(name='Pokedex')
         self.pokedex.profile.add(self.profile)
         self.pokedex.entries.add(self.pokedex_entry)

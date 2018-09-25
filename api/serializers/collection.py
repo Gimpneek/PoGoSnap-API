@@ -2,13 +2,13 @@
 """ Serializer for Collection model """
 from rest_framework import serializers
 from api.models.collection import Collection
-from api.serializers.pokedex_entry import PokedexEntrySerializer
+from api.serializers.collection_entry import CollectionEntrySerializer
 
 
 class CollectionSerializer(serializers.ModelSerializer):
     """ Serializer for Collection model """
 
-    entries = PokedexEntrySerializer(many=True, read_only=True)
+    entries = CollectionEntrySerializer(many=True, read_only=True)
 
     class Meta:
         """ Meta class for serializer """

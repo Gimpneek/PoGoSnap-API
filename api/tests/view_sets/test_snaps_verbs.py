@@ -3,7 +3,7 @@ import allure
 from django.test import TestCase
 from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
-    create_image, create_collection, create_pokedex_entry, USER_NAME, \
+    create_image, create_collection, create_collection_entry, USER_NAME, \
     create_another_profile, ANOTHER_PROFILE_NAME
 
 
@@ -19,7 +19,7 @@ class TestSnapsVerbsCommon(TestCase):
         self.pokemon = create_pokemon()
         self.image = create_image(profile=self.profile, pokemon=self.pokemon)
         self.entry = \
-            create_pokedex_entry(image=self.image)
+            create_collection_entry(image=self.image)
         self.pokedex = \
             create_collection(profile=self.profile, entries=[self.entry])
         self.api = APIClient()

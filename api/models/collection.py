@@ -5,13 +5,13 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from api.models.profile import Profile
-from api.models.pokedex_entry import PokedexEntry
+from api.models.collection_entry import CollectionEntry
 
 
 class Collection(models.Model):
     """ Collection model """
 
-    entries = models.ManyToManyField(PokedexEntry, blank=True)
+    entries = models.ManyToManyField(CollectionEntry, blank=True)
     profile = models.ManyToManyField(Profile)
     name = models.CharField(max_length=256, default='Pokedex')
 

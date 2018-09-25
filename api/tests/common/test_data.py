@@ -8,7 +8,7 @@ from oauth2_provider.models import Application, AccessToken
 from api.models.profile import Profile
 from api.models.pokemon import Pokemon
 from api.models.image import Image
-from api.models.pokedex_entry import PokedexEntry
+from api.models.collection_entry import CollectionEntry
 from api.models.collection import Collection
 import pytz
 
@@ -115,16 +115,16 @@ def create_image(profile=None, pokemon=None):
     )
 
 
-def create_pokedex_entry(image=None):
+def create_collection_entry(image=None):
     """
-    Create a pokedex entry
+    Create a collection entry
 
     :param image: Image object
-    :return: PokedexEntry object
+    :return: CollectionEntry object
     """
     if not image:
         image = create_image()
-    return PokedexEntry.objects.create(
+    return CollectionEntry.objects.create(
         image=image
     )
 
@@ -140,7 +140,7 @@ def create_collection(profile=None, entries=None):
     if not profile:
         create_profile()
     if not entries:
-        entries = [create_pokedex_entry()]
+        entries = [create_collection_entry()]
     pokedex = Collection.objects.get(name='Pokedex', profile=profile)
     for entry in entries:
         pokedex.entries.add(entry)

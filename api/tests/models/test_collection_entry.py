@@ -1,20 +1,20 @@
 """ Tests for Pokedex Entry Model """
 from django.test import TestCase
 from datetime import datetime
-from api.models.pokedex_entry import PokedexEntry
+from api.models.collection_entry import CollectionEntry
 from api.tests.common.test_data import create_pokemon, create_image, \
     create_collection, create_profile
 
 
-class TestPokedexEntryObject(TestCase):
-    """ Test the creation of the Pokedex Entry Object """
+class TestCollectionEntryObject(TestCase):
+    """ Test the creation of the Collection Entry Object """
 
     def setUp(self):
         """ Set up the tests """
         self.profile = create_profile()
         self.image = create_image()
         self.pokemon = create_pokemon()
-        self.pokedex_entry = PokedexEntry.objects.create(
+        self.pokedex_entry = CollectionEntry.objects.create(
             image=self.image
         )
         self.pokedex = create_collection(self.profile, [self.pokedex_entry])

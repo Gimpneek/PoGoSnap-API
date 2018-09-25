@@ -1,14 +1,14 @@
-""" Common set up for testing Pokedex API """
+""" Common set up for testing Collection API """
 from django.test import TestCase
 from api.tests.common.test_data import PROFILE_NAME
 
 
-class PokedexSerializerCase(TestCase):
+class CollectionSerializerCase(TestCase):
     """
-    Common setup for testing the Pokedex API endpoints
+    Common setup for testing the Collection API endpoints
     """
 
     def setUp(self):
         """ Set up the tests """
-        super(PokedexSerializerCase, self).setUp()
+        super(CollectionSerializerCase, self).setUp()
         self.url = '/api/v1/profiles/{0}/collections/'.format(PROFILE_NAME)
