@@ -1,7 +1,7 @@
 """ Test the API for Pokedex """
 import allure
 from rest_framework.test import APIClient
-from api.tests.serializers.common.pokedex import CollectionSerializerCase
+from api.tests.serializers.common.collection import CollectionSerializerCase
 from api.tests.common.test_data import create_image, create_profile, \
     create_pokemon, create_collection_entry, create_collection
 

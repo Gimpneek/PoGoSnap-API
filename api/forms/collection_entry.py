@@ -11,5 +11,5 @@ class CollectionEntryForm(ModelForm):
         """ Metaclass for CollectionEntry form """
         model = CollectionEntry
         fields = (
-            'image'
+            'image',
         )
