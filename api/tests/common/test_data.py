@@ -8,8 +8,8 @@ from oauth2_provider.models import Application, AccessToken
 from api.models.profile import Profile
 from api.models.pokemon import Pokemon
 from api.models.image import Image
-from api.models.pokedex_entry import PokedexEntry
-from api.models.pokedex import Pokedex
+from api.models.collection_entry import CollectionEntry
+from api.models.collection import Collection
 import pytz
 
 
@@ -115,39 +115,33 @@ def create_image(profile=None, pokemon=None):
     )
 
 
-def create_pokedex_entry(image=None, pokemon=None):
+def create_collection_entry(image=None):
     """
-    Create a pokedex entry
+    Create a collection entry
 
     :param image: Image object
-    :param pokemon: Pokemon object
-    :return: PokedexEntry object
+    :return: CollectionEntry object
     """
     if not image:
         image = create_image()
-    if not pokemon:
-        pokemon = create_pokemon()
-    return PokedexEntry.objects.create(
-        image=image,
-        pokemon=pokemon
+    return CollectionEntry.objects.create(
+        image=image
     )
 
 
-def create_pokedex(profile=None, entries=None):
+def create_collection(profile=None, entries=None):
     """
-    Create a pokedex object
+    Create a collection object
 
     :param profile: Profile object
     :param entries: A list of PokedexEntry objects
-    :return: Pokedex object
+    :return: Collection object
     """
     if not profile:
-        profile = create_profile()
+        create_profile()
     if not entries:
-        entries = [create_pokedex_entry()]
-    pokedex = Pokedex.objects.get_or_create(
-        profile=profile
-    )[0]
+        entries = [create_collection_entry()]
+    pokedex = Collection.objects.get(name='Pokedex', profile=profile)
     for entry in entries:
         pokedex.entries.add(entry)
     pokedex.save()

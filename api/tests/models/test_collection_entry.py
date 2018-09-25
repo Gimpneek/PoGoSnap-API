@@ -1,24 +1,23 @@
 """ Tests for Pokedex Entry Model """
 from django.test import TestCase
 from datetime import datetime
-from api.models.pokedex_entry import PokedexEntry
+from api.models.collection_entry import CollectionEntry
 from api.tests.common.test_data import create_pokemon, create_image, \
-    create_pokedex, create_profile
+    create_collection, create_profile
 
 
-class TestPokedexEntryObject(TestCase):
-    """ Test the creation of the Pokedex Entry Object """
+class TestCollectionEntryObject(TestCase):
+    """ Test the creation of the Collection Entry Object """
 
     def setUp(self):
         """ Set up the tests """
         self.profile = create_profile()
         self.image = create_image()
         self.pokemon = create_pokemon()
-        self.pokedex_entry = PokedexEntry.objects.create(
-            image=self.image,
-            pokemon=self.pokemon
+        self.pokedex_entry = CollectionEntry.objects.create(
+            image=self.image
         )
-        self.pokedex = create_pokedex(self.profile, [self.pokedex_entry])
+        self.pokedex = create_collection(self.profile, [self.pokedex_entry])
         self.nowish = datetime.now()
 
     def test_image(self):
@@ -27,13 +26,6 @@ class TestPokedexEntryObject(TestCase):
         correctly
         """
         self.assertEqual(self.pokedex_entry.image.id, self.image.id)
-
-    def test_pokemon(self):
-        """
-        Test that the pokemon that's passed in creation is saved to the object
-        correctly
-        """
-        self.assertEqual(self.pokedex_entry.pokemon.id, self.pokemon.id)
 
     def test_create_date_year(self):
         """
@@ -68,5 +60,8 @@ class TestPokedexEntryObject(TestCase):
         """
         self.assertEqual(
             str(self.pokedex_entry),
-            "{0} image in {1}'s Pokedex".format(self.pokemon, self.profile)
+            "{0} image in {1}'s Pokedex".format(
+                self.image.pokemon.name,
+                self.profile
+            )
         )
