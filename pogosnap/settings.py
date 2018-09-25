@@ -118,12 +118,15 @@ AUTH_PASSWORD_VALIDATORS = [
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.facebook.FacebookAppOAuth2',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.instagram.InstagramOAuth2',
     'rest_framework_social_oauth2.backends.DjangoOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 )
 
 SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get('FACEBOOK_ACCESS_KEY')
 SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get('FACEBOOK_SECRET_KEY')
+SOCIAL_AUTH_INSTAGRAM_KEY = os.environ.get('INSTAGRAM_ACCESS_KEY')
+SOCIAL_AUTH_INSTAGRAM_SECRET = os.environ.get('INSTAGRAM_SECRET_KEY')
 LOGIN_REDIRECT_URL = 'index'
 
 # Internationalization
