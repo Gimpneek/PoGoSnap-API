@@ -19,6 +19,22 @@ class CollectionsViewSet(viewsets.GenericViewSet,
     queryset = Collection.objects.all().order_by('id')
     serializer_class = CollectionSerializer
 
+    # pylint: disable=arguments-differ
+    def list(self, request, profile_name=None):
+        """
+        List the Collections from the supplied Profile
+
+        :param request: Django Request
+        :param profile_name: name of the profile to fetch Images from
+        :return: List of Collections
+        """
+        profile = Profile.objects.get(name__iexact=profile_name)
+        collections = Collection.objects.filter(profile=profile)
+        page = self.paginate_queryset(
+            collections.all().order_by('id'))
+        serialized = CollectionSerializer(page, many=True)
+        return self.get_paginated_response(serialized.data)
+
     # pylint: disable=no-self-use,arguments-differ
     def create(self, request, profile_name=None):
         """
