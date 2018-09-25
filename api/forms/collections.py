@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# pylint: disable=useless-object-inheritance
 """ Form definition for Collection """
 from django.forms.models import ModelForm
 from api.models.collection import Collection
