@@ -11,9 +11,19 @@ from api.models.collection_entry import CollectionEntry
 class Collection(models.Model):
     """ Collection model """
 
+    type_choices = (
+        ('pokedex', 'Pokedex'),
+        ('album', 'Album')
+    )
+
     entries = models.ManyToManyField(CollectionEntry, blank=True)
     profile = models.ManyToManyField(Profile)
     name = models.CharField(max_length=256, default='Pokedex')
+    type = models.CharField(
+        max_length=12,
+        choices=type_choices,
+        default='pokedex'
+    )
 
     def __str__(self):
         """ String representation of the Collection object """
@@ -29,6 +39,6 @@ class Collection(models.Model):
         :param kwargs: keyword args
         """
         if created:
-            pokedex = Collection.objects.create(name='Pokedex')
+            pokedex = Collection.objects.create(name='Pokedex', type='pokedex')
             pokedex.profile.add(instance)
             pokedex.save()

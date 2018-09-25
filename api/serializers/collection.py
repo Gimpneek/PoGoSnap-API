@@ -15,5 +15,7 @@ class CollectionSerializer(serializers.ModelSerializer):
         model = Collection
         fields = (
             'id',
-            'entries'
+            'entries',
+            'name',
+            'type'
         )

@@ -14,7 +14,8 @@ class TestCollectionObject(TestCase):
         super(TestCollectionObject, self).setUp()
         self.profile = create_profile()
         self.pokedex_entry = create_collection_entry()
-        self.pokedex = Collection.objects.create(name='Pokedex')
+        self.pokedex = Collection.objects.create(
+            name='Pokedex', type='pokedex')
         self.pokedex.profile.add(self.profile)
         self.pokedex.entries.add(self.pokedex_entry)
         self.pokedex.save()
@@ -31,6 +32,18 @@ class TestCollectionObject(TestCase):
         """
         self.assertEqual(
             self.pokedex.entries.all()[0].id, self.pokedex_entry.id)
+
+    def test_name(self):
+        """
+        Test that the name of the collection is saved to the object
+        """
+        self.assertEqual(self.pokedex.name, 'Pokedex')
+
+    def test_type(self):
+        """
+        Test that the type of the collection is saved to the object
+        """
+        self.assertEqual(self.pokedex.type, 'pokedex')
 
     def test_string_rep(self):
         """

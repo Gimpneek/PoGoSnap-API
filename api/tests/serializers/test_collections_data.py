@@ -28,6 +28,18 @@ class TestCollectionsCollectionData(CollectionSerializerCase):
         self.result_entries = self.result.get('entries')
         self.result_entry = self.result_entries[0]
 
+    def test_name(self):
+        """
+        Test that the name of the collection is returned
+        """
+        self.assertEqual(self.result.get('name'), 'Pokedex')
+
+    def test_type(self):
+        """
+        Test that the type of the colletion is returned
+        """
+        self.assertEqual(self.result.get('type'), 'pokedex')
+
     def test_entries(self):
         """
         Test the length of the entries returned
@@ -141,7 +153,20 @@ class TestCollectionsResourceData(CollectionSerializerCase):
         self.api = APIClient()
         self.resource_url = '{0}{1}/'.format(self.url, self.pokedex.id)
         resp = self.api.get(self.resource_url)
-        self.result_entry = resp.data.get('entries')[0]
+        self.result = resp.data
+        self.result_entry = self.result.get('entries')[0]
+
+    def test_name(self):
+        """
+        Test the name of the collection is returned
+        """
+        self.assertEqual(self.result.get('name'), 'Pokedex')
+
+    def test_type(self):
+        """
+        Test that the type of the collection is returned
+        """
+        self.assertEqual(self.result.get('type'), 'pokedex')
 
     def test_image_id(self):
         """
