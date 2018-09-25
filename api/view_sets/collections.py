@@ -19,7 +19,7 @@ class CollectionsViewSet(viewsets.GenericViewSet,
     queryset = Collection.objects.all().order_by('id')
     serializer_class = CollectionSerializer
 
-    # pylint: disable=no-self-use
+    # pylint: disable=no-self-use,arguments-differ
     def create(self, request, profile_name=None):
         """
         Create a Collection
