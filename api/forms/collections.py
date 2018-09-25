@@ -12,4 +12,5 @@ class CollectionForm(ModelForm):
         model = Collection
         fields = (
             'name',
+            'type'
         )

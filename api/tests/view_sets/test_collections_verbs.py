@@ -56,7 +56,8 @@ class TestCollectionsCollectionVerbs(TestCollectionVerbsCommon):
         resp = self.api.post(
             self.url,
             {
-                'name': 'Test Collection'
+                'name': 'Test Collection',
+                'type': 'album'
             },
             HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token),
             format='json')
@@ -84,7 +85,8 @@ class TestCollectionsCollectionVerbs(TestCollectionVerbsCommon):
         resp = self.api.post(
             '/api/v1/profiles/{0}/collections/'.format(ANOTHER_PROFILE_NAME),
             {
-                'name': 'Test Collection'
+                'name': 'Test Collection',
+                'type': 'album'
             },
             HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token),
             format='json')
@@ -98,7 +100,8 @@ class TestCollectionsCollectionVerbs(TestCollectionVerbsCommon):
         resp = self.api.post(
             self.url,
             {
-                'name': 'Test Collection'
+                'name': 'Test Collection',
+                'type': 'album'
             },
             format='json')
         self.assertEqual(resp.status_code, 401)
@@ -125,7 +128,8 @@ class TestCollectionsCollectionVerbs(TestCollectionVerbsCommon):
         resp = self.api.put(
             self.url,
             {
-                'name': 'Test Collection'
+                'name': 'Test Collection',
+                'type': 'album'
             },
             format='json'
         )
@@ -139,7 +143,8 @@ class TestCollectionsCollectionVerbs(TestCollectionVerbsCommon):
         resp = self.api.put(
             self.url,
             {
-                'name': 'Test Collection'
+                'name': 'Test Collection',
+                'type': 'album'
             },
             format='json')
         self.assertEqual(resp.status_code, 405)
@@ -180,7 +185,8 @@ class TestCollectionResourceVerbs(TestCollectionVerbsCommon):
         resp = self.api.post(
             self.url,
             {
-                'name': 'Test Pokedex'
+                'name': 'Test Pokedex',
+                'type': 'pokedex'
             },
             HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token),
             format='json')
@@ -194,7 +200,8 @@ class TestCollectionResourceVerbs(TestCollectionVerbsCommon):
         resp = self.api.post(
             self.url,
             {
-                'name': 'Test Pokedex'
+                'name': 'Test Pokedex',
+                'type': 'pokedex'
             },
             format='json')
         self.assertEqual(resp.status_code, 405)
@@ -221,7 +228,8 @@ class TestCollectionResourceVerbs(TestCollectionVerbsCommon):
         resp = self.api.put(
             self.url,
             {
-                'name': 'Test Pokedex'
+                'name': 'Test Pokedex',
+                'type': 'pokedex'
             },
             format='json'
         )
@@ -235,7 +243,8 @@ class TestCollectionResourceVerbs(TestCollectionVerbsCommon):
         resp = self.api.put(
             self.url,
             {
-                'name': 'Test Pokedex'
+                'name': 'Test Pokedex',
+                'type': 'pokedex'
             },
             format='json')
         self.assertEqual(resp.status_code, 405)
