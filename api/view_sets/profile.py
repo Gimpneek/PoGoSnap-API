@@ -23,8 +23,17 @@ class ProfileViewSet(viewsets.ReadOnlyModelViewSet):
             return Profile.objects.filter(name__iexact=name)
         return Profile.objects.all().order_by('id')
 
+    # pylint: disable=no-self-use,invalid-name
     @action(detail=False)
     def me(self, request, *args, **kwargs):
+        """
+        Get the currently logged in user
+
+        :param request: Django Request
+        :param args: Additional args
+        :param kwargs: Additional keyword args
+        :return: Django Response
+        """
         user_id = request.user.id
         if not user_id:
             return Response(status=status.HTTP_401_UNAUTHORIZED)
