@@ -2,4 +2,4 @@
 ignore=migrations,tests
 
 [MESSAGES CONTROL]
-disable=too-few-public-methods, no-member, unused-argument
+disable=too-few-public-methods, no-member, unused-argument, useless-object-inheritance

@@ -1,6 +1,8 @@
 # pylint: disable=too-many-ancestors
 """ View Set for Profile Serializer """
-from rest_framework import viewsets
+from rest_framework import viewsets, status
+from rest_framework.response import Response
+from rest_framework.decorators import action
 from api.models.profile import Profile
 from api.serializers.profile import ProfileSerializer
 
@@ -20,3 +22,20 @@ class ProfileViewSet(viewsets.ReadOnlyModelViewSet):
         if name:
             return Profile.objects.filter(name__iexact=name)
         return Profile.objects.all().order_by('id')
+
+    # pylint: disable=no-self-use,invalid-name
+    @action(detail=False)
+    def me(self, request, *args, **kwargs):
+        """
+        Get the currently logged in user
+
+        :param request: Django Request
+        :param args: Additional args
+        :param kwargs: Additional keyword args
+        :return: Django Response
+        """
+        user_id = request.user.id
+        if not user_id:
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
+        profile = Profile.objects.get(user__id=user_id)
+        return Response(data=ProfileSerializer(profile).data)
