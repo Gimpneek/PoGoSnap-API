@@ -5,6 +5,7 @@ from rest_framework.test import APIClient
 from api.tests.common.test_data import create_profile, create_pokemon, \
     create_image, create_collection, create_collection_entry, \
     create_another_profile, ANOTHER_PROFILE_NAME, create_access_token
+from api.models.collection import Collection
 
 
 class TestCollectionVerbsCommon(TestCase):
@@ -62,6 +63,9 @@ class TestCollectionsCollectionVerbs(TestCollectionVerbsCommon):
             HTTP_AUTHORIZATION='Bearer {0}'.format(self.access_token),
             format='json')
         self.assertEqual(resp.status_code, 201)
+        collection = Collection.objects.last()
+        self.assertEqual(collection.name, 'Test Collection')
+        self.assertEqual(collection.type, 'album')
 
     def test_post_error(self):
         """

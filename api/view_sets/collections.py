@@ -57,7 +57,8 @@ class CollectionsViewSet(viewsets.GenericViewSet,
         form = CollectionForm(request.data)
         if form.is_valid():
             collection = Collection.objects.create(
-                name=form.data.get('name')
+                name=form.data.get('name'),
+                type=form.data.get('type')
             )
             collection.profile.add(profile)
             collection.save()
