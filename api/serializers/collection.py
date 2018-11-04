@@ -8,14 +8,11 @@ from api.serializers.collection_entry import CollectionEntrySerializer
 class CollectionSerializer(serializers.ModelSerializer):
     """ Serializer for Collection model """
 
-    entries = CollectionEntrySerializer(many=True, read_only=True)
-
     class Meta:
         """ Meta class for serializer """
         model = Collection
         fields = (
             'id',
-            'entries',
             'name',
             'type'
         )

@@ -30,10 +30,15 @@ class CollectionsViewSet(viewsets.GenericViewSet,
         """
         profile = Profile.objects.get(name__iexact=profile_name)
         collections = Collection.objects.filter(profile=profile)
-        page = self.paginate_queryset(
-            collections.all().order_by('id'))
+        page = collections.all().order_by('id')
         serialized = CollectionSerializer(page, many=True)
-        return self.get_paginated_response(serialized.data)
+        data = {
+            'count': collections.count(),
+            'next': None,
+            'previous': None,
+            'results': serialized.data
+        }
+        return Response(data=data)
 
     # pylint: disable=no-self-use,arguments-differ
     def create(self, request, profile_name=None):
