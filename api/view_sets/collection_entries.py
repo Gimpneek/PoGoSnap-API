@@ -20,6 +20,7 @@ class CollectionEntriesViewSet(viewsets.GenericViewSet,
     queryset = CollectionEntry.objects.all().order_by('id')
     serializer_class = CollectionEntrySerializer
 
+    # pylint: disable=arguments-differ
     def list(self, request, profile_name=None, collections_pk=None):
         """
         Override the list function to filter the queryset
