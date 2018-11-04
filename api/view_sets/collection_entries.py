@@ -20,6 +20,20 @@ class CollectionEntriesViewSet(viewsets.GenericViewSet,
     queryset = CollectionEntry.objects.all().order_by('id')
     serializer_class = CollectionEntrySerializer
 
+    def list(self, request, profile_name=None, collections_pk=None):
+        """
+        Override the list function to filter the queryset
+
+        :param request: Django Request
+        :param profile_name: Name of the profile that holds the collection
+        :param collections_pk: ID the collection to get entries for
+        :return: Django Response
+        """
+        entries = CollectionEntry.objects.filter(collection__pk=collections_pk)
+        page = self.paginate_queryset(entries.all().order_by('id'))
+        serialized = CollectionEntrySerializer(page, many=True)
+        return self.get_paginated_response(serialized.data)
+
     # pylint: disable=no-self-use,arguments-differ
     def create(self, request, profile_name=None, collections_pk=None):
         """
