@@ -1,8 +1,8 @@
-astroid==2.0.4
+astroid==2.1.0
 flake8==3.6.0
-pylint==2.1.1
-pylint-django==2.0.2
-coverage==4.5.1
-sphinx==1.8.1
-pytest-django==3.4.3
-allure-pytest==2.5.3
+pylint==2.2.2
+pylint-django==2.0.5
+coverage==4.5.2
+sphinx==1.8.3
+pytest-django==3.4.5
+allure-pytest==2.5.4
