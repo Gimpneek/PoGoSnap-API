@@ -4,5 +4,5 @@ pylint==2.2.2
 pylint-django==2.0.5
 coverage==4.5.2
 sphinx==1.8.4
-pytest-django==3.4.5
+pytest-django==3.4.7
 allure-pytest==2.5.4
